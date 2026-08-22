@@ -3,7 +3,7 @@
   "name": "LTX-2-3-GGUF",
   "description": "*Legacy \u2014 superseded by the V1.1 Director pack below.*\n\n**LTX-2.3** (Lightricks) \u2014 a 22B text/image-to-video model with synchronized audio generation, GGUF quantized. Includes four workflows by AIKnowledge2Go: Text2Video, Image2Video, Text\u002BAudio2Video, and Image\u002BAudio2Video.",
   "version": 1,
-  "subVersion": 6,
+  "subVersion": 7,
   "isReleaseConfig": true,
   "isLegacy": true,
   "workloadTarget": "Installer",
@@ -187,7 +187,7 @@
       "downloadLinks": [
         {
           "id": "7515fe99-3e01-4631-b7d6-6e64b53f305f",
-          "url": "https://huggingface.co/Lightricks/LTX-2.3/resolve/main/ltx-2.3-spatial-upscaler-x2-1.0.safetensors?download=true",
+          "url": "https://huggingface.co/Lightricks/LTX-2.3/resolve/main/ltx-2.3-spatial-upscaler-x2-1.1.safetensors?download=true",
           "vramProfile": null,
           "destination": "",
           "enabled": true
