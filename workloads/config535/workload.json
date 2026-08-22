@@ -1,0 +1,57 @@
+{
+  "id": "a6d086d1-0347-45fe-adab-432c7dd5b52a",
+  "name": "Config535",
+  "description": "*Empty configuration \u2014 no repository, models, or workflows have been configured.*\n\nThis entry appears to be a leftover or in-progress draft rather than an installable workload.",
+  "version": 1,
+  "subVersion": 1,
+  "isReleaseConfig": false,
+  "isLegacy": false,
+  "workloadTarget": "Installer",
+  "workflowType": "Image",
+  "thumbnail": null,
+  "repository": {
+    "type": "ComfyUI",
+    "repositoryUrl": "https://github.com/comfyanonymous/ComfyUI",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": false,
+    "virtualEnvironmentName": "venv",
+    "installTriton": true,
+    "installSageAttention": true
+  },
+  "torch": {
+    "torchVersion": "2.8.0",
+    "cudaVersion": "13.0",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": ""
+  },
+  "installLamaCpp": false,
+  "selectedLamaCppWheelId": null,
+  "gitRepositories": [],
+  "modelDownloads": []
+}

@@ -1,0 +1,9 @@
+{
+  "id": "e3242702-c5e3-46a1-aad9-78f05d67b74f",
+  "name": "Qwen-2512-Text2Image-By AIKnowledge2Go",
+  "version": 1,
+  "subVersion": 1,
+  "workloads": [
+    "725ffdfb-22b6-436f-905a-ce678bda287d"
+  ]
+}

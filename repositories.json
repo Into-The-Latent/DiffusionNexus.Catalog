@@ -1,0 +1,234 @@
+[
+  {
+    "id": "1f4b6839-7563-4fa2-abe1-62673530d3ed",
+    "url": "https://github.com/calcuis/gguf",
+    "name": "gguf",
+    "priority": 10,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "2043617d-7613-4138-a1d1-8f0d5814a439",
+    "url": "https://github.com/crystian/ComfyUI-Crystools",
+    "name": "ComfyUI-Crystools",
+    "priority": 3,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "22c44679-20c2-4320-bfe7-dc1c9cd66f31",
+    "url": "https://github.com/rgthree/rgthree-comfy",
+    "name": "rgthree-comfy",
+    "priority": 8,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "3c83a410-eff3-471b-ba02-2704fa0825f3",
+    "url": "https://github.com/alt-key-project/comfyui-dream-video-batches",
+    "name": "comfyui-dream-video-batches",
+    "priority": 12,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "3c84d425-200e-450c-ad4c-13c0922ffc34",
+    "url": "https://github.com/IuvenisSapiens/ComfyUI_Qwen3-VL-Instruct",
+    "name": "ComfyUI_Qwen3-VL-Instruct",
+    "priority": 2,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "40ee7409-7c27-48fc-8192-a9ef5e9d9fbb",
+    "url": "https://github.com/ssitu/ComfyUI_UltimateSDUpscale",
+    "name": "ComfyUI_UltimateSDUpscale",
+    "priority": 3,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "4b770405-17dc-48a8-8572-86edb36cbe41",
+    "url": "https://github.com/chrisgoringe/cg-use-everywhere",
+    "name": "cg-use-everywhere",
+    "priority": 9,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "4ce7b7f6-9374-4aab-a00e-fec2448c28df",
+    "url": "https://github.com/Little-God1983/ComfyUI-AI2Go-Utils",
+    "name": "ComfyUI-AI2Go-Utils",
+    "priority": 1,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "4fb94538-ab8b-4e63-96d9-1b967d775fc0",
+    "url": "https://github.com/city96/ComfyUI-GGUF",
+    "name": "ComfyUI-GGUF",
+    "priority": 1,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "6c3b33db-f5af-49d9-8816-989cb0c2a13c",
+    "url": "https://github.com/alchemine/comfyui-alchemine-pack",
+    "name": "comfyui-alchemine-pack",
+    "priority": 6,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "73b59b5f-8db7-46fc-8aaa-74cf85d6a368",
+    "url": "https://github.com/lbouaraba/comfyui-krea2edit",
+    "name": "ComfyUI-Krea2Edit",
+    "priority": 7,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "78c14e45-59d9-475e-a74d-5ba0b1adc493",
+    "url": "https://github.com/Smirnov75/ComfyUI-mxToolkit",
+    "name": "ComfyUI-mxToolkit",
+    "priority": 10,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "8a662629-0eeb-41a1-8c28-1916e08e20b9",
+    "url": "https://github.com/cubiq/ComfyUI_essentials",
+    "name": "ComfyUI_essentials",
+    "priority": 6,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "93f9be80-9cdb-4201-a49f-42279aeed9a8",
+    "url": "https://github.com/kijai/ComfyUI-GIMM-VFI",
+    "name": "ComfyUI-GIMM-VFI",
+    "priority": 9,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "95a15b05-9b3d-4a37-8636-9f09513cfad4",
+    "url": "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite",
+    "name": "ComfyUI-VideoHelperSuite",
+    "priority": 1,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "9caab870-67c8-411c-9b8c-30a40819f77f",
+    "url": "https://github.com/WhatDreamsCost/WhatDreamsCost-ComfyUI",
+    "name": "WhatDreamsCost-ComfyUI",
+    "priority": 9,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "a7ec46ab-b669-44e9-a787-82f89d1b4deb",
+    "url": "https://github.com/ltdrdata/was-node-suite-comfyui",
+    "name": "was-node-suite-comfyui",
+    "priority": 5,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "ad0e827d-f5dd-4bce-ba8b-23900ac5f5eb",
+    "url": "https://github.com/kijai/ComfyUI-WanVideoWrapper",
+    "name": "ComfyUI-WanVideoWrapper",
+    "priority": 2,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "ad48d973-a0dc-42ac-9412-221d864c2b10",
+    "url": "https://github.com/Fannovel16/comfyui_controlnet_aux",
+    "name": "comfyui_controlnet_aux",
+    "priority": 6,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "b3e6754c-a5cc-42a9-8943-cd5fe7581b2f",
+    "url": "https://github.com/kijai/ComfyUI-KJNodes",
+    "name": "ComfyUI-KJNodes",
+    "priority": 5,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "b41334fa-d246-4f5e-983c-9560cf6c2efd",
+    "url": "https://github.com/yolain/ComfyUI-Easy-Use",
+    "name": "ComfyUI-Easy-Use",
+    "priority": 5,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "b6fd8a6e-ccbb-4a5c-a9df-912d0407e4aa",
+    "url": "https://github.com/pythongosssss/ComfyUI-Custom-Scripts",
+    "name": "ComfyUI-Custom-Scripts",
+    "priority": 4,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "bb68fb22-52c1-428f-93a3-106e44d8fcf8",
+    "url": "https://github.com/Comfy-Org/ComfyUI-Manager",
+    "name": "ComfyUI-Manager",
+    "priority": 7,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "d384f472-f37c-4a34-ad6e-b7663aee593f",
+    "url": "https://github.com/kijai/ComfyUI-MelBandRoFormer",
+    "name": "ComfyUI-MelBandRoFormer",
+    "priority": 8,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "da9fb948-c137-458e-8aac-96f7fe18e200",
+    "url": "https://github.com/Into-The-Latent/ComfyUI-IntoTheLatent-Utils",
+    "name": "ComfyUI-IntoTheLatent-Utils",
+    "priority": 2,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "eb1bd9c2-208a-4e01-a46a-4740ebae9ab5",
+    "url": "https://github.com/BobJohnson24/ComfyUI-INT8-Fast",
+    "name": "ComfyUI-INT8-Fast",
+    "priority": 6,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "eb9c1f5b-2744-4169-9524-ec1e346eb8fc",
+    "url": "https://github.com/1038lab/ComfyUI-QwenVL",
+    "name": "ComfyUI-QwenVL",
+    "priority": 2,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "ff69cddc-aac4-4884-b46f-6db2ec467d19",
+    "url": "https://github.com/scofano/comfy-audio-duration",
+    "name": "comfy-audio-duration",
+    "priority": 7,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
+    "id": "ffb87a64-24ba-4ff0-8d48-9f769d062303",
+    "url": "https://github.com/lihaoyun6/ComfyUI-FlashVSR_Ultra_Fast",
+    "name": "ComfyUI-FlashVSR_Ultra_Fast",
+    "priority": 4,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  }
+]

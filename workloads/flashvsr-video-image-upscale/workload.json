@@ -1,0 +1,64 @@
+{
+  "id": "8063df6d-2cdd-4535-bc7c-d3fddbef05ab",
+  "name": "FlashVSR-Video\u0026Image Upscale",
+  "description": "**FlashVSR** (OpenImagingLab) \u2014 a streaming, diffusion-based super-resolution model for near real-time video and image upscaling, wrapped for ComfyUI via the \u0022Ultra Fast\u0022 node pack.\n\n- One-step diffusion upscaling \u2014 far faster than traditional multi-step SR pipelines\n- Handles both video and still-image upscaling\n\nIncludes two workflows by AIKnowledge2Go: **Video-Upscale-FlashVSR Ultra** and **Image-Upscale-FlashVSR Ultra**.",
+  "version": 1,
+  "subVersion": 5,
+  "isReleaseConfig": true,
+  "isLegacy": false,
+  "workloadTarget": "Installer",
+  "workflowType": "Image",
+  "thumbnail": "thumbnail.webp",
+  "repository": {
+    "type": "ComfyUI",
+    "repositoryUrl": "https://github.com/comfyanonymous/ComfyUI",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": false,
+    "virtualEnvironmentName": "venv",
+    "installTriton": true,
+    "installSageAttention": true
+  },
+  "torch": {
+    "torchVersion": "2.8.0",
+    "cudaVersion": "12.8",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": ""
+  },
+  "installLamaCpp": false,
+  "selectedLamaCppWheelId": null,
+  "gitRepositories": [
+    "95a15b05-9b3d-4a37-8636-9f09513cfad4",
+    "ffb87a64-24ba-4ff0-8d48-9f769d062303",
+    "b3e6754c-a5cc-42a9-8943-cd5fe7581b2f",
+    "8a662629-0eeb-41a1-8c28-1916e08e20b9",
+    "bb68fb22-52c1-428f-93a3-106e44d8fcf8",
+    "22c44679-20c2-4320-bfe7-dc1c9cd66f31"
+  ],
+  "modelDownloads": []
+}

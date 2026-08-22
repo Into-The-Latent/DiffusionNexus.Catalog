@@ -1,0 +1,57 @@
+{
+  "id": "3f207e2b-b0d3-439e-82cf-53901f3904e1",
+  "name": "Fooocus",
+  "description": "**Fooocus** (lllyasviel) \u2014 an offline, SDXL-based image generator built for simplicity: a Midjourney-style single-box prompt UI instead of a node graph.\n\nGood fit for quick, no-fuss generations without configuring samplers, schedulers, or workflows by hand.",
+  "version": 1,
+  "subVersion": 4,
+  "isReleaseConfig": true,
+  "isLegacy": false,
+  "workloadTarget": "Installer",
+  "workflowType": "Image",
+  "thumbnail": "thumbnail.webp",
+  "repository": {
+    "type": "Fooocus",
+    "repositoryUrl": "https://github.com/lllyasviel/Fooocus",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": false,
+    "virtualEnvironmentName": "venv",
+    "installTriton": false,
+    "installSageAttention": false
+  },
+  "torch": {
+    "torchVersion": "2.8.0",
+    "cudaVersion": "12.8",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": ""
+  },
+  "installLamaCpp": false,
+  "selectedLamaCppWheelId": null,
+  "gitRepositories": [],
+  "modelDownloads": []
+}

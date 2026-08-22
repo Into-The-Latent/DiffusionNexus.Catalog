@@ -1,0 +1,9 @@
+{
+  "id": "0be5b4d9-516d-40de-9ad7-ec5de5e4cd70",
+  "name": "WAN 2.2 I2V by AI Knowledege2Go-GGUF",
+  "version": 1,
+  "subVersion": 1,
+  "workloads": [
+    "0d7a24d9-80ae-443b-9ff3-497cd54f5b7b"
+  ]
+}

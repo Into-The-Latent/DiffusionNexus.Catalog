@@ -1,0 +1,57 @@
+{
+  "id": "5a0e080a-2dc3-4d48-98db-28c3b3aff7a7",
+  "name": "ACE-Step-1.5",
+  "description": "**Open-source music foundation model** from StepFun/ACEMusic \u2014 full songs (vocals \u002B instrumental) from a text prompt or lyrics.\n\n- Generates a complete song in under 2 seconds on an A100, under 10 seconds on an RTX 3090\n- Runs locally on **less than 4GB VRAM** for the base model\n- Supports lightweight LoRA personalization \u2014 train a custom style from just a few reference songs\n- XL variant (4B DiT) available for higher fidelity, needs \u226512GB VRAM (offload) / \u226520GB recommended\n\nInstalls the ACE-Step 1.5 repository directly (not a ComfyUI workload).",
+  "version": 1,
+  "subVersion": 2,
+  "isReleaseConfig": true,
+  "isLegacy": false,
+  "workloadTarget": "Installer",
+  "workflowType": "Image",
+  "thumbnail": "thumbnail.webp",
+  "repository": {
+    "type": "AceStep",
+    "repositoryUrl": "https://github.com/ace-step/ACE-Step-1.5",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": false,
+    "virtualEnvironmentName": "venv",
+    "installTriton": false,
+    "installSageAttention": false
+  },
+  "torch": {
+    "torchVersion": "2.8.0",
+    "cudaVersion": "13.0",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": ""
+  },
+  "installLamaCpp": false,
+  "selectedLamaCppWheelId": null,
+  "gitRepositories": [],
+  "modelDownloads": []
+}

@@ -1,0 +1,9 @@
+{
+  "id": "96f0b0e0-91f0-45c5-aedf-cd0d198dadc0",
+  "name": "Minimax-H3-Image-2Video-GGUF",
+  "version": 1,
+  "subVersion": 0,
+  "workloads": [
+    "a229c02e-2586-47df-8be2-b342defc78ec"
+  ]
+}

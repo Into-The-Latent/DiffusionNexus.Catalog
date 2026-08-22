@@ -1,0 +1,10 @@
+{
+  "id": "d5ed74da-9edd-44d2-ab2f-a1d20991f63d",
+  "name": "2. Image2Video-LTX2-3-By AIKnowledge2Go",
+  "version": 1,
+  "subVersion": 1,
+  "workloads": [
+    "713496d3-6bf4-405f-97c5-1f4d4c22c11a",
+    "e358f5aa-5204-4c5f-a1ed-266265c1f413"
+  ]
+}

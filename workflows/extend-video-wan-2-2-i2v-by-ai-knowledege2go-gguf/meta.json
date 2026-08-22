@@ -1,0 +1,9 @@
+{
+  "id": "d91ce49b-f07c-4e44-9107-9565f14702cd",
+  "name": "Extend Video - WAN 2.2 I2V by AI Knowledege2Go-GGUF",
+  "version": 1,
+  "subVersion": 0,
+  "workloads": [
+    "0d7a24d9-80ae-443b-9ff3-497cd54f5b7b"
+  ]
+}

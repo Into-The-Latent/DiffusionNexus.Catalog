@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object", "additionalProperties": false, "required": ["id", "url", "name"],
+    "properties": {
+      "id": { "type": "string", "format": "uuid" }, "url": { "type": "string" }, "name": { "type": "string" },
+      "priority": { "type": "integer" }, "installRequirements": { "type": "boolean" }, "additionalPipPackages": { "type": ["string", "null"] }
+    }
+  }
+}

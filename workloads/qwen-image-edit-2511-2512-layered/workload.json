@@ -1,0 +1,294 @@
+{
+  "id": "725ffdfb-22b6-436f-905a-ce678bda287d",
+  "name": "Qwen-Image-Edit-2511 - 2512 - Layered",
+  "description": "The **full Qwen-Image bundle**: Qwen-Image-Edit-2511 (instruction-based editing), Qwen-Image-2512 (text-to-image), and **Qwen-Image-Layered** (native layer-decomposed generation \u2014 outputs separable foreground/background/object layers, PSD-style) \u2014 all GGUF quantized.\n\n- Edit-2511 handles natural-language photo edits (\u0022remove the object\u0022, \u0022change the lighting\u0022)\n- Layered is unique for producing editable, separated layers directly from a prompt instead of a flattened image\n- 4-step Lightning LoRAs keep both models fast\n\nIncludes five workflows by AIKnowledge2Go: Image Edit, Image-to-Layers, Text-to-Layers, 2512 Text2Image, and an Edit \u002B ControlNet flow.",
+  "version": 1,
+  "subVersion": 12,
+  "isReleaseConfig": true,
+  "isLegacy": false,
+  "workloadTarget": "Installer",
+  "workflowType": "Image",
+  "thumbnail": "thumbnail.webp",
+  "repository": {
+    "type": "ComfyUI",
+    "repositoryUrl": "https://github.com/comfyanonymous/ComfyUI",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": true,
+    "virtualEnvironmentName": "venv",
+    "installTriton": true,
+    "installSageAttention": true
+  },
+  "torch": {
+    "torchVersion": "2.8.0",
+    "cudaVersion": "12.8",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": "8,12,16,24,32"
+  },
+  "installLamaCpp": false,
+  "selectedLamaCppWheelId": null,
+  "gitRepositories": [
+    "4fb94538-ab8b-4e63-96d9-1b967d775fc0",
+    "b41334fa-d246-4f5e-983c-9560cf6c2efd",
+    "b3e6754c-a5cc-42a9-8943-cd5fe7581b2f",
+    "ad48d973-a0dc-42ac-9412-221d864c2b10",
+    "bb68fb22-52c1-428f-93a3-106e44d8fcf8",
+    "22c44679-20c2-4320-bfe7-dc1c9cd66f31",
+    "4b770405-17dc-48a8-8572-86edb36cbe41"
+  ],
+  "modelDownloads": [
+    {
+      "id": "163a40e9-6f1c-4d60-8439-4122d2be134a",
+      "name": "qwen_2.5_vl_7b_fp8_scaled",
+      "downloadLinks": [
+        {
+          "id": "d0731b3e-aba5-4e6e-8202-6fc40ef6e594",
+          "url": "https://huggingface.co/Comfy-Org/HunyuanVideo_1.5_repackaged/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/text_encoders",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "31ec6925-7899-4ac1-8a5f-88c30b5586d0",
+      "name": "Qwen-Image-Edit-2511-GGUF",
+      "downloadLinks": [
+        {
+          "id": "b6435b90-f02c-4000-ba03-f6bd98d44832",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF/resolve/main/qwen-image-edit-2511-Q5_K_S.gguf?download=true",
+          "vramProfile": "VRAM_16GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "c081582f-9fe0-4e74-bb11-d56dcd20ddc4",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF/resolve/main/qwen-image-edit-2511-Q8_0.gguf?download=true",
+          "vramProfile": "VRAM_32GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "aff659dd-a24d-4097-8d83-ab3cf9e18ad0",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF/resolve/main/qwen-image-edit-2511-Q2_K.gguf?download=true",
+          "vramProfile": "VRAM_8GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "d17ce218-78d9-4ba1-bbf5-f72cd8f16ede",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF/resolve/main/qwen-image-edit-2511-Q4_0.gguf?download=true",
+          "vramProfile": "VRAM_12GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "b2c38554-99a0-4d23-95c1-baf041b9ecd9",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-Edit-2511-GGUF/resolve/main/qwen-image-edit-2511-Q6_K.gguf?download=true",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "66134a83-fdbb-4da7-97f4-15858bc2b2c7",
+      "name": "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-fp32",
+      "downloadLinks": [
+        {
+          "id": "c93769fa-f317-4505-ad6e-abe6e909279b",
+          "url": "https://huggingface.co/lightx2v/Qwen-Image-Edit-2511-Lightning/resolve/main/Qwen-Image-Edit-2511-Lightning-4steps-V1.0-fp32.safetensors?download=true",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/loras",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "6cbde3ba-8d97-439c-9a6e-288bd4781ae5",
+      "name": "qwen_image_vae",
+      "downloadLinks": [
+        {
+          "id": "cafecb74-2d7e-44e4-aa65-e0c9965d3ca4",
+          "url": "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/vae",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "897f360e-52b6-4f48-ad3b-347f55e571d4",
+      "name": "Qwen-Image-Lightning-4steps-V1.0",
+      "downloadLinks": [
+        {
+          "id": "15345a89-6786-4c7e-abff-8db862642cbf",
+          "url": "https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-Lightning-4steps-V1.0.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/loras",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "a49b89b7-ce0c-4db1-af9d-b650149d9459",
+      "name": "Qwen-Image-Layered-GGUF",
+      "downloadLinks": [
+        {
+          "id": "3d384d0c-0ba9-4d57-9cbd-f095e29ca230",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-Layered-GGUF/resolve/main/qwen-image-layered-Q2_K.gguf?download=true",
+          "vramProfile": "VRAM_8GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "b8d0949c-3aa7-4acd-9cdb-8619f9acf879",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-Layered-GGUF/resolve/main/qwen-image-layered-Q4_0.gguf?download=true",
+          "vramProfile": "VRAM_12GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "42650e79-e5ef-48f9-aac0-edfa9bc53080",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-Layered-GGUF/resolve/main/qwen-image-layered-Q8_0.gguf?download=true",
+          "vramProfile": "VRAM_32GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "9cf76524-eadf-45f9-9ca3-1c6040b8bc8c",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-Layered-GGUF/resolve/main/qwen-image-layered-Q5_K_S.gguf?download=true",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "9bc5ef59-fd9c-4127-ad61-545e769d2ffc",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-Layered-GGUF/resolve/main/qwen-image-layered-Q4_K_S.gguf?download=true",
+          "vramProfile": "VRAM_16GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "ad468276-b46c-4970-8f4d-eba1f09fead6",
+      "name": "qwen_image_layered_vae",
+      "downloadLinks": [
+        {
+          "id": "007f4011-e9fd-4149-8613-813b57841e16",
+          "url": "https://huggingface.co/Comfy-Org/Qwen-Image-Layered_ComfyUI/resolve/main/split_files/vae/qwen_image_layered_vae.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/vae",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "c3e9ea2f-5718-493b-b514-8ceeecde352a",
+      "name": "Qwen-Image-2512-GGUF",
+      "downloadLinks": [
+        {
+          "id": "da0835ef-eb8b-40c4-addd-8e13a4388342",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-2512-GGUF/resolve/main/qwen-image-2512-Q2_K.gguf?download=true",
+          "vramProfile": "VRAM_8GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "395d8865-9c6d-4018-acb2-68ae1bb30306",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-2512-GGUF/resolve/main/qwen-image-2512-Q8_0.gguf?download=true",
+          "vramProfile": "VRAM_32GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "cd8df3ec-7f05-4472-af61-2db49b8f6722",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-2512-GGUF/resolve/main/qwen-image-2512-Q4_K_S.gguf?download=true",
+          "vramProfile": "VRAM_16GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "c68f4155-e6b6-4867-baeb-a1dc280795d6",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-2512-GGUF/resolve/main/qwen-image-2512-Q4_0.gguf?download=true",
+          "vramProfile": "VRAM_12GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "087a6d3d-b754-484d-a6eb-62222e457e23",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-2512-GGUF/resolve/main/qwen-image-2512-Q6_K.gguf?download=true",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "id": "f119f4d4-ef71-484f-8213-0abc49f26900",
+    "name": "JamePeng",
+    "isGPU": true,
+    "pythonVersion": "3.12",
+    "cudaVersion": "12.8",
+    "url": "https://github.com/JamePeng/llama-cpp-python/releases/download/v0.3.20-cu128-Basic-win-20260104/llama_cpp_python-0.3.20-cp312-cp312-win_amd64.whl",
+    "sha256": "sha256:949aca17374a6f908707f4b00301ef9e085f00a73b4743b1c0c9bd064a025c8a"
+  }
+]

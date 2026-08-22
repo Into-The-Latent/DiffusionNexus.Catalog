@@ -1,0 +1,229 @@
+{
+  "id": "f07ee6e0-742f-47a5-9828-b48d2601ccf3",
+  "name": "Flux-Klein 9b \u002B 4b",
+  "description": "**FLUX.2 [klein]** (Black Forest Labs) \u2014 BFL\u0027s fastest image model family, unifying text-to-image generation and multi-reference editing in one compact architecture.\n\n- End-to-end inference in **under a second**, step-distilled to 4 inference steps\n- 9B variant defines the quality/latency frontier; 4B variant trades a little quality for even more speed\n- Non-commercial license; GGUF quantized (via unsloth) for both sizes\n\nIncludes three workflows by AIKnowledge2Go: **Text-to-Image**, **Image-Edit**, and an **Anime-to-Real** conversion flow.",
+  "version": 1,
+  "subVersion": 6,
+  "isReleaseConfig": true,
+  "isLegacy": false,
+  "workloadTarget": "Installer",
+  "workflowType": "Image",
+  "thumbnail": "thumbnail.webp",
+  "repository": {
+    "type": "ComfyUI",
+    "repositoryUrl": "https://github.com/comfyanonymous/ComfyUI",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": true,
+    "virtualEnvironmentName": "venv",
+    "installTriton": true,
+    "installSageAttention": true
+  },
+  "torch": {
+    "torchVersion": "2.8.0",
+    "cudaVersion": "12.8",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": "8,12,16,24,32"
+  },
+  "installLamaCpp": false,
+  "selectedLamaCppWheelId": null,
+  "gitRepositories": [
+    "4fb94538-ab8b-4e63-96d9-1b967d775fc0",
+    "40ee7409-7c27-48fc-8192-a9ef5e9d9fbb",
+    "b3e6754c-a5cc-42a9-8943-cd5fe7581b2f",
+    "bb68fb22-52c1-428f-93a3-106e44d8fcf8",
+    "22c44679-20c2-4320-bfe7-dc1c9cd66f31",
+    "4b770405-17dc-48a8-8572-86edb36cbe41"
+  ],
+  "modelDownloads": [
+    {
+      "id": "28a10d09-2b50-4095-a4a8-f71080319635",
+      "name": "4x-Ultrasharp",
+      "downloadLinks": [
+        {
+          "id": "1944e41c-ed94-4e20-a93a-7efc2a319a6d",
+          "url": "https://huggingface.co/Kim2091/UltraSharp/resolve/main/4x-UltraSharp.pth",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/upscale_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "4320dc3b-c756-4aef-81d3-5f3a56bf3ebb",
+      "name": "flux2-vae",
+      "downloadLinks": [
+        {
+          "id": "7f117b1c-103c-4fc8-860b-e180394d4728",
+          "url": "https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/vae",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "5dd5c7fe-5a85-4271-a290-c73f10d36fa6",
+      "name": "qwen_3_4b",
+      "downloadLinks": [
+        {
+          "id": "d3279ac8-8e7b-4419-a998-f222998b1533",
+          "url": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/text_encoders",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "6189e9b5-fd7b-439f-823d-1e9e8320ad90",
+      "name": "FLUX.2-klein-9B-GGUF",
+      "downloadLinks": [
+        {
+          "id": "7e26a393-ca05-4d92-9f10-9b1a6b9ac1bd",
+          "url": "https://huggingface.co/unsloth/FLUX.2-klein-9B-GGUF/resolve/main/flux-2-klein-9b-Q5_K_S.gguf?download=true",
+          "vramProfile": "VRAM_12GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "bbd1dfb8-cb58-443f-8431-6cb80d8efb04",
+          "url": "https://huggingface.co/unsloth/FLUX.2-klein-9B-GGUF/resolve/main/flux-2-klein-9b-Q8_0.gguf?download=true",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "288b63cb-e25d-4d06-b4e1-67fc57c498f8",
+          "url": "https://huggingface.co/unsloth/FLUX.2-klein-9B-GGUF/resolve/main/flux-2-klein-9b-Q6_K.gguf?download=true",
+          "vramProfile": "VRAM_16GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "30d1d35d-6e1a-4ee5-83ad-c3202e8fffc9",
+          "url": "https://huggingface.co/unsloth/FLUX.2-klein-9B-GGUF/resolve/main/flux-2-klein-9b-Q4_K_M.gguf?download=true",
+          "vramProfile": "VRAM_8GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "545cc10e-4d25-40d0-86f2-9dfcc93cbe8a",
+          "url": "https://huggingface.co/unsloth/FLUX.2-klein-9B-GGUF/resolve/main/flux-2-klein-9b-BF16.gguf?download=true",
+          "vramProfile": "VRAM_32GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "8f3d58d8-731e-4298-bb00-80cc0123e0f7",
+      "name": "qwen_3_8b_fp8mixed",
+      "downloadLinks": [
+        {
+          "id": "32b5447a-e830-4752-9924-f492f5e46823",
+          "url": "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/text_encoders",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "c728bffd-fffe-4bb4-8744-b01906054a41",
+      "name": "FLUX.2-klein-4B-GGUF",
+      "downloadLinks": [
+        {
+          "id": "0ab28be7-d3e7-48fd-907e-1a980d8d8029",
+          "url": "https://huggingface.co/unsloth/FLUX.2-klein-4B-GGUF/resolve/main/flux-2-klein-4b-BF16.gguf?download=true",
+          "vramProfile": "VRAM_32GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "48f43021-e685-4c93-8ca1-fafbdf958cbc",
+          "url": "https://huggingface.co/unsloth/FLUX.2-klein-4B-GGUF/resolve/main/flux-2-klein-4b-Q6_K.gguf?download=true",
+          "vramProfile": "VRAM_16GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "b26feb83-1cdb-45fd-8ccd-63bb01a63f81",
+          "url": "https://huggingface.co/unsloth/FLUX.2-klein-4B-GGUF/resolve/main/flux-2-klein-4b-Q8_0.gguf?download=true",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "59624598-30d3-4e4d-bf8c-d92ee0957c0e",
+          "url": "https://huggingface.co/unsloth/FLUX.2-klein-4B-GGUF/resolve/main/flux-2-klein-4b-Q6_K.gguf?download=true",
+          "vramProfile": "VRAM_12GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "2186e6ba-eeff-4661-8cd8-feb74f2b4f0a",
+          "url": "https://huggingface.co/unsloth/FLUX.2-klein-4B-GGUF/resolve/main/flux-2-klein-4b-Q5_K_M.gguf?download=true",
+          "vramProfile": "VRAM_8GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    }
+  ]
+}

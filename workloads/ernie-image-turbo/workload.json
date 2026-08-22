@@ -1,0 +1,168 @@
+{
+  "id": "08a686b2-42c4-4aeb-bd59-0321455d06e1",
+  "name": "Ernie-Image-Turbo",
+  "description": "**Baidu ERNIE-Image-Turbo** \u2014 an 8-step distilled text-to-image DiT model (Apache-2.0), optimized with DMD \u002B RL for speed and aesthetics.\n\n- Strong dense/long-form **text rendering** \u2014 posters, comics, infographics, multi-panel layouts\n- Reliable complex instruction-following for multi-object, detail-heavy prompts\n- Runs on consumer GPUs with **24GB VRAM**\n- GGUF quantized (via unsloth) for ComfyUI, with a bundled prompt-enhancer text encoder\n\nIncludes a text-to-image workflow and an upscale workflow (rgthree, UltimateSDUpscale, KJNodes, Easy-Use), both by AIKnowledge2Go.",
+  "version": 1,
+  "subVersion": 4,
+  "isReleaseConfig": true,
+  "isLegacy": false,
+  "workloadTarget": "Installer",
+  "workflowType": "Image",
+  "thumbnail": "thumbnail.webp",
+  "repository": {
+    "type": "ComfyUI",
+    "repositoryUrl": "https://github.com/comfyanonymous/ComfyUI",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": true,
+    "virtualEnvironmentName": "venv",
+    "installTriton": true,
+    "installSageAttention": true
+  },
+  "torch": {
+    "torchVersion": "2.8.0",
+    "cudaVersion": "12.8",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": "8,12,16,24,32"
+  },
+  "installLamaCpp": false,
+  "selectedLamaCppWheelId": null,
+  "gitRepositories": [
+    "4fb94538-ab8b-4e63-96d9-1b967d775fc0",
+    "40ee7409-7c27-48fc-8192-a9ef5e9d9fbb",
+    "b41334fa-d246-4f5e-983c-9560cf6c2efd",
+    "b3e6754c-a5cc-42a9-8943-cd5fe7581b2f",
+    "22c44679-20c2-4320-bfe7-dc1c9cd66f31"
+  ],
+  "modelDownloads": [
+    {
+      "id": "1dd09182-5e0a-482f-8b41-a92dbea961c7",
+      "name": "ministral-3-3b",
+      "downloadLinks": [
+        {
+          "id": "d12f9fe0-f5e2-4db1-b2f9-6e7e8edf91f0",
+          "url": "https://huggingface.co/Comfy-Org/ERNIE-Image/resolve/main/text_encoders/ministral-3-3b.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/text_encoders",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "43a85dde-5c5f-4487-8c71-d76bf8d7d64b",
+      "name": "4x-UltraSharp",
+      "downloadLinks": [
+        {
+          "id": "1a56a2ed-7dd9-4d08-a468-f82dba498e0d",
+          "url": "https://huggingface.co/Kim2091/UltraSharp/resolve/main/4x-UltraSharp.pth",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/upscale_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "7cb2fe54-3273-4870-81b6-8972f93d5096",
+      "name": "unsloth/ERNIE-Image-Turbo-GGUF",
+      "downloadLinks": [
+        {
+          "id": "f07deef4-d201-4b27-ae68-ff2e1b7b0565",
+          "url": "https://huggingface.co/unsloth/ERNIE-Image-Turbo-GGUF/resolve/main/ernie-image-turbo-Q8_0.gguf?download=true",
+          "vramProfile": "VRAM_16GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "bc6c0de4-804e-49a0-9733-1217dffac154",
+          "url": "https://huggingface.co/unsloth/ERNIE-Image-Turbo-GGUF/resolve/main/ernie-image-turbo-Q6_K.gguf?download=true",
+          "vramProfile": "VRAM_8GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "050d2c7b-1180-4660-af20-465ff7d3a85d",
+          "url": "https://huggingface.co/unsloth/ERNIE-Image-Turbo-GGUF/blob/main/ernie-image-turbo-BF16.gguf",
+          "vramProfile": "VRAM_32GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "945f0a0b-0fb6-4a9c-a562-e53833ecbbed",
+      "name": "flux2-vae",
+      "downloadLinks": [
+        {
+          "id": "598e6021-8b51-4ff8-a93a-cd15e63be2ed",
+          "url": "https://huggingface.co/Comfy-Org/ERNIE-Image/resolve/main/vae/flux2-vae.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/vae",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "d1897643-5dc0-49e2-baa7-141ea0973969",
+      "name": "ernie-image-prompt-enhancer",
+      "downloadLinks": [
+        {
+          "id": "37c210b8-c3ee-4b5c-9ea1-494565eff711",
+          "url": "https://huggingface.co/Comfy-Org/ERNIE-Image/resolve/main/text_encoders/ernie-image-prompt-enhancer.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/text_encoders",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    }
+  ]
+}

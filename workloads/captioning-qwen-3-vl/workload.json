@@ -1,0 +1,79 @@
+{
+  "id": "701da214-2b25-44b4-a904-e4b036621564",
+  "name": "Captioning-Qwen-3-VL",
+  "description": "**Automatic image captioning** using Qwen3-VL, Alibaba\u0027s latest vision-language model \u2014 runs as a Diffusion Nexus Core capability rather than a full ComfyUI workload.\n\n- Strong OCR, scene understanding, and instruction-following for generating training captions\n- Includes the \u0060Qwen-3VL-autocaption\u0060 workflow for batch-captioning a folder of images\n- Useful for preparing captioned datasets ahead of LoRA or fine-tuning work",
+  "version": 1,
+  "subVersion": 4,
+  "isReleaseConfig": true,
+  "isLegacy": false,
+  "workloadTarget": "DiffusionNexusCore",
+  "workflowType": "Image",
+  "thumbnail": "thumbnail.webp",
+  "repository": {
+    "type": "ComfyUI",
+    "repositoryUrl": "https://github.com/comfyanonymous/ComfyUI",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": false,
+    "virtualEnvironmentName": "venv",
+    "installTriton": true,
+    "installSageAttention": true
+  },
+  "torch": {
+    "torchVersion": "2.8.0",
+    "cudaVersion": "12.8",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": ""
+  },
+  "installLamaCpp": false,
+  "selectedLamaCppWheelId": null,
+  "gitRepositories": [
+    "3c84d425-200e-450c-ad4c-13c0922ffc34",
+    "b6fd8a6e-ccbb-4a5c-a9df-912d0407e4aa"
+  ],
+  "modelDownloads": [
+    {
+      "id": "03ab8480-3af2-4aaa-ae8d-9d065f754d5a",
+      "name": "Qwen 3 VL",
+      "downloadLinks": [
+        {
+          "id": "6e9d9d10-a79e-468d-b503-87e61409fb5f",
+          "url": "Link",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": true
+    }
+  ]
+}

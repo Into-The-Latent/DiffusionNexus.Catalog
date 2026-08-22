@@ -1,0 +1,59 @@
+{
+  "id": "1f0a3aef-15d9-4b8a-80dc-b03f318e414f",
+  "name": "Base-install-Triton-SageAttention-Manager",
+  "description": "A **bare ComfyUI install** with **Triton** and **SageAttention** pre-installed and ComfyUI-Manager for adding nodes afterwards.\n\n- Triton compiles custom GPU kernels for supported nodes/attention implementations\n- SageAttention is a drop-in quantized attention kernel that noticeably speeds up sampling on supported cards with minimal quality loss\n- No models or workflows are bundled \u2014 this is a performance-tuned starting point, not a ready-to-run workload\n\nUse this when you want a ComfyUI base that\u0027s already primed for the faster attention backends other workload packs expect.",
+  "version": 1,
+  "subVersion": 1,
+  "isReleaseConfig": true,
+  "isLegacy": false,
+  "workloadTarget": "Installer",
+  "workflowType": "Image",
+  "thumbnail": "thumbnail.webp",
+  "repository": {
+    "type": "ComfyUI",
+    "repositoryUrl": "https://github.com/comfyanonymous/ComfyUI",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": false,
+    "virtualEnvironmentName": "venv",
+    "installTriton": true,
+    "installSageAttention": true
+  },
+  "torch": {
+    "torchVersion": "2.8.0",
+    "cudaVersion": "12.8",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": ""
+  },
+  "installLamaCpp": false,
+  "selectedLamaCppWheelId": null,
+  "gitRepositories": [
+    "bb68fb22-52c1-428f-93a3-106e44d8fcf8"
+  ],
+  "modelDownloads": []
+}

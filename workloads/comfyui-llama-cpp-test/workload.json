@@ -1,0 +1,65 @@
+{
+  "id": "6e7dfafd-1261-4f9a-a63b-c79cd69a1267",
+  "name": "ComfyUI Llama Cpp test",
+  "description": "*Work-in-progress test configuration.*\n\nThis pack currently only installs a set of custom node repositories (rgthree, ComfyUI-KJNodes, ComfyUI-QwenVL, and others) \u2014 no models or workflows have been attached yet. Not ready for general use.",
+  "version": 1,
+  "subVersion": 2,
+  "isReleaseConfig": false,
+  "isLegacy": false,
+  "workloadTarget": "Installer",
+  "workflowType": "Image",
+  "thumbnail": null,
+  "repository": {
+    "type": "ComfyUI",
+    "repositoryUrl": "https://github.com/comfyanonymous/ComfyUI",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": false,
+    "virtualEnvironmentName": "venv",
+    "installTriton": true,
+    "installSageAttention": true
+  },
+  "torch": {
+    "torchVersion": "2.8.0",
+    "cudaVersion": "12.8",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": ""
+  },
+  "installLamaCpp": false,
+  "selectedLamaCppWheelId": "f119f4d4-ef71-484f-8213-0abc49f26900",
+  "gitRepositories": [
+    "eb9c1f5b-2744-4169-9524-ec1e346eb8fc",
+    "b6fd8a6e-ccbb-4a5c-a9df-912d0407e4aa",
+    "b3e6754c-a5cc-42a9-8943-cd5fe7581b2f",
+    "a7ec46ab-b669-44e9-a787-82f89d1b4deb",
+    "8a662629-0eeb-41a1-8c28-1916e08e20b9",
+    "6c3b33db-f5af-49d9-8816-989cb0c2a13c",
+    "bb68fb22-52c1-428f-93a3-106e44d8fcf8"
+  ],
+  "modelDownloads": []
+}

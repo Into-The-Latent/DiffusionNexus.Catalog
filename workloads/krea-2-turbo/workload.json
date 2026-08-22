@@ -1,0 +1,186 @@
+{
+  "id": "e79c079a-2fd7-4fe7-8086-23731092555d",
+  "name": "Krea-2-Turbo",
+  "description": "**Krea 2 Turbo** \u2014 Krea AI\u0027s fast image generation and editing model, GGUF quantized with a dedicated Krea2Edit ComfyUI node.\n\n- Turbo-distilled for quick text-to-image and image-editing turnaround\n- \u0022Identity Edit\u0022 LoRA included for consistent-subject edits\n- Non-commercial license\n\nIncludes four workflows by **IntoTheLatent**: Text2Image\u002BUpscale, Upscale-only, Batch Text2Image\u002BUpscale, and Image-Edit.",
+  "version": 1,
+  "subVersion": 7,
+  "isReleaseConfig": true,
+  "isLegacy": false,
+  "workloadTarget": "Installer",
+  "workflowType": "Image",
+  "thumbnail": "thumbnail.webp",
+  "repository": {
+    "type": "ComfyUI",
+    "repositoryUrl": "https://github.com/comfyanonymous/ComfyUI",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": true,
+    "virtualEnvironmentName": "venv",
+    "installTriton": true,
+    "installSageAttention": true
+  },
+  "torch": {
+    "torchVersion": "2.8.0",
+    "cudaVersion": "12.8",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": "8,12,16,24,32"
+  },
+  "installLamaCpp": false,
+  "selectedLamaCppWheelId": null,
+  "gitRepositories": [
+    "4ce7b7f6-9374-4aab-a00e-fec2448c28df",
+    "2043617d-7613-4138-a1d1-8f0d5814a439",
+    "40ee7409-7c27-48fc-8192-a9ef5e9d9fbb",
+    "b3e6754c-a5cc-42a9-8943-cd5fe7581b2f",
+    "73b59b5f-8db7-46fc-8aaa-74cf85d6a368",
+    "bb68fb22-52c1-428f-93a3-106e44d8fcf8",
+    "22c44679-20c2-4320-bfe7-dc1c9cd66f31",
+    "4b770405-17dc-48a8-8572-86edb36cbe41",
+    "1f4b6839-7563-4fa2-abe1-62673530d3ed"
+  ],
+  "modelDownloads": [
+    {
+      "id": "1c3b0cde-7934-4aad-a332-e507706657ea",
+      "name": "4x-UltraSharp",
+      "downloadLinks": [
+        {
+          "id": "3f79e3ff-501b-4cf4-94fd-13b1a4452b00",
+          "url": "https://huggingface.co/Kim2091/UltraSharp/resolve/main/4x-UltraSharp.pth",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/upscale_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "439eafa1-1dfa-4912-8247-2e0b47f1cc3b",
+      "name": "qwen3vl_4b_fp8_scaled",
+      "downloadLinks": [
+        {
+          "id": "d6fbeb2a-059d-47eb-8c0d-a3f3de9fc835",
+          "url": "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/text_encoders/qwen3vl_4b_fp8_scaled.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/text_encoders",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "7072962e-5799-48b0-8332-527f25b2d61e",
+      "name": "Krea2 GGUF",
+      "downloadLinks": [
+        {
+          "id": "721d402e-5a76-432c-9216-9141de582126",
+          "url": "https://huggingface.co/vantagewithai/Krea-2-Turbo-GGUF/blob/main/krea2_turbo-Q3_K_S.gguf",
+          "vramProfile": "VRAM_8GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "7ef18db7-46a9-4057-8ff4-943ba4f67e18",
+          "url": "https://huggingface.co/vantagewithai/Krea-2-Turbo-GGUF/blob/main/krea2_turbo-Q6_K.gguf",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "11b50d52-86ec-4022-bad8-802251224302",
+          "url": "https://huggingface.co/vantagewithai/Krea-2-Turbo-GGUF/blob/main/krea2_turbo-Q8_0.gguf",
+          "vramProfile": "VRAM_32GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "af43942c-3b35-4e38-88f0-88198560e438",
+          "url": "https://huggingface.co/vantagewithai/Krea-2-Turbo-GGUF/blob/main/krea2_turbo-Q4_K_S.gguf",
+          "vramProfile": "VRAM_12GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "d6ab9f6f-5fea-477f-89c6-a6cfe806fe8d",
+          "url": "https://huggingface.co/vantagewithai/Krea-2-Turbo-GGUF/blob/main/krea2_turbo-Q5_K_S.gguf",
+          "vramProfile": "VRAM_16GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "dbf2705e-1b19-474f-b9d4-7d589fd52eda",
+      "name": "Krea 2 Identity Edit",
+      "downloadLinks": [
+        {
+          "id": "b73ea683-b22e-4178-857a-0b5f7876e8a5",
+          "url": "https://civitai.com/api/download/models/3139172?fileId=3019297",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/loras",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "ee50006e-2d9d-436c-810c-e02a13206816",
+      "name": "qwen_image_vae",
+      "downloadLinks": [
+        {
+          "id": "8eb9c6da-c121-4270-8d19-953909b43fd3",
+          "url": "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/vae/qwen_image_vae.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/vae",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    }
+  ]
+}

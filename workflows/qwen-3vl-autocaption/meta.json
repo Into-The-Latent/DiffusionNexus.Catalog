@@ -1,0 +1,9 @@
+{
+  "id": "a4a7ffd9-88a5-4206-948a-f24c5e8a44c6",
+  "name": "Qwen-3VL-autocaption",
+  "version": 1,
+  "subVersion": 0,
+  "workloads": [
+    "701da214-2b25-44b4-a904-e4b036621564"
+  ]
+}

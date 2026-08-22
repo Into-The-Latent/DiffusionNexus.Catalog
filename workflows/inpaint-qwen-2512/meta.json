@@ -1,0 +1,10 @@
+{
+  "id": "7a1cbc59-16b6-4ed5-9be4-86d86d6d0aef",
+  "name": "Inpaint-Qwen-2512",
+  "version": 1,
+  "subVersion": 0,
+  "workloads": [
+    "137929e4-5c05-4304-80d4-5d785d45fd3f",
+    "4c486765-a4c1-4e94-acc2-bbac0e405b6a"
+  ]
+}

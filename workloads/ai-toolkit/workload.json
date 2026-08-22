@@ -1,0 +1,57 @@
+{
+  "id": "737be0cb-5349-4d18-a058-82ea3ef61aae",
+  "name": "AI-Toolkit",
+  "description": "**LoRA / fine-tuning toolkit** by Ostris for training custom LoRAs on diffusion models (FLUX, SDXL, Qwen-Image, and more).\n\n- Ships with a browser-based UI for configuring datasets, captions, and training runs\n- Supports most modern open-weight image models out of the box\n- Good fit for training a personal style, character, or concept LoRA on your own hardware\n\nInstalls the \u0060ai-toolkit\u0060 repository directly (not a ComfyUI workload).",
+  "version": 1,
+  "subVersion": 5,
+  "isReleaseConfig": true,
+  "isLegacy": false,
+  "workloadTarget": "Installer",
+  "workflowType": "Image",
+  "thumbnail": "thumbnail.webp",
+  "repository": {
+    "type": "AIToolkit",
+    "repositoryUrl": "https://github.com/ostris/ai-toolkit",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": false,
+    "virtualEnvironmentName": "venv",
+    "installTriton": true,
+    "installSageAttention": false
+  },
+  "torch": {
+    "torchVersion": "2.8.0",
+    "cudaVersion": "12.8",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": ""
+  },
+  "installLamaCpp": false,
+  "selectedLamaCppWheelId": null,
+  "gitRepositories": [],
+  "modelDownloads": []
+}

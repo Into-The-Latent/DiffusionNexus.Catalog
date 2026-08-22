@@ -1,0 +1,239 @@
+{
+  "id": "713496d3-6bf4-405f-97c5-1f4d4c22c11a",
+  "name": "LTX-2-3-GGUF",
+  "description": "*Legacy \u2014 superseded by the V1.1 Director pack below.*\n\n**LTX-2.3** (Lightricks) \u2014 a 22B text/image-to-video model with synchronized audio generation, GGUF quantized. Includes four workflows by AIKnowledge2Go: Text2Video, Image2Video, Text\u002BAudio2Video, and Image\u002BAudio2Video.",
+  "version": 1,
+  "subVersion": 6,
+  "isReleaseConfig": true,
+  "isLegacy": true,
+  "workloadTarget": "Installer",
+  "workflowType": "Video",
+  "thumbnail": "thumbnail.webp",
+  "repository": {
+    "type": "ComfyUI",
+    "repositoryUrl": "https://github.com/comfyanonymous/ComfyUI",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": true,
+    "virtualEnvironmentName": "venv",
+    "installTriton": true,
+    "installSageAttention": true
+  },
+  "torch": {
+    "torchVersion": "2.8.0",
+    "cudaVersion": "12.8",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": "12,16,24,32"
+  },
+  "installLamaCpp": false,
+  "selectedLamaCppWheelId": null,
+  "gitRepositories": [
+    "4fb94538-ab8b-4e63-96d9-1b967d775fc0",
+    "b3e6754c-a5cc-42a9-8943-cd5fe7581b2f",
+    "8a662629-0eeb-41a1-8c28-1916e08e20b9",
+    "bb68fb22-52c1-428f-93a3-106e44d8fcf8",
+    "ff69cddc-aac4-4884-b46f-6db2ec467d19",
+    "d384f472-f37c-4a34-ad6e-b7663aee593f",
+    "22c44679-20c2-4320-bfe7-dc1c9cd66f31",
+    "4b770405-17dc-48a8-8572-86edb36cbe41"
+  ],
+  "modelDownloads": [
+    {
+      "id": "026c063b-705c-47fc-b2fe-bc45d5f867de",
+      "name": "ltx-2.3-22b-distilled-lora-dynamic_fro09_avg_rank_105",
+      "downloadLinks": [
+        {
+          "id": "b35947b7-d75b-4024-9d1e-f54b57156dec",
+          "url": "https://huggingface.co/Kijai/LTX2.3_comfy/resolve/main/loras/ltx-2.3-22b-distilled-lora-dynamic_fro09_avg_rank_105_bf16.safetensors?download=true",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/loras",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "18c9514c-3c01-4153-97ac-f3c1b26cea44",
+      "name": "LTX23_audio_vae",
+      "downloadLinks": [
+        {
+          "id": "ff71f0ca-1f18-45d9-b35c-ee6675e80deb",
+          "url": "https://huggingface.co/Kijai/LTX2.3_comfy/resolve/main/vae/LTX23_audio_vae_bf16.safetensors?download=true",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/vae",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "4db5034f-2fed-4b3b-9beb-033dcfa92246",
+      "name": "MelBandRoformer",
+      "downloadLinks": [
+        {
+          "id": "4aba7169-b45f-43d9-8f26-f07ce03dbafa",
+          "url": "https://huggingface.co/Kijai/MelBandRoFormer_comfy/resolve/main/MelBandRoformer_fp16.safetensors?download=true",
+          "vramProfile": "VRAM_12GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "f4657b73-ea72-4130-8a42-5304406af617",
+          "url": "https://huggingface.co/Kijai/MelBandRoFormer_comfy/resolve/main/MelBandRoformer_fp32.safetensors?download=true",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "89803ada-1af0-4a03-97fe-50294dbfe897",
+      "name": "ltx-2-3-22b-dev",
+      "downloadLinks": [
+        {
+          "id": "f5f5f472-9da7-4fa2-b8b4-bb5f31a32d84",
+          "url": "https://huggingface.co/vantagewithai/LTX-2.3-GGUF/resolve/main/dev/ltx-2-3-22b-dev-Q6_K.gguf?download=true",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "70e80171-60f6-4c8f-b3b8-658a58507f92",
+          "url": "https://huggingface.co/vantagewithai/LTX-2.3-GGUF/resolve/main/dev/ltx-2-3-22b-dev-Q8_0.gguf?download=true",
+          "vramProfile": "VRAM_32GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "ff023a9f-76e8-4dc4-a94c-694354a441e8",
+          "url": "https://huggingface.co/vantagewithai/LTX-2.3-GGUF/resolve/main/dev/ltx-2-3-22b-dev-Q5_K_S.gguf?download=true",
+          "vramProfile": "VRAM_16GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "9c21ead3-cac3-40b1-8a54-55346139c68d",
+          "url": "https://huggingface.co/vantagewithai/LTX-2.3-GGUF/resolve/main/dev/ltx-2-3-22b-dev-Q3_K_M.gguf?download=true",
+          "vramProfile": "VRAM_12GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "954c870b-e2a5-4849-982f-426fe1556b40",
+      "name": "LTX23_video_vae",
+      "downloadLinks": [
+        {
+          "id": "195ab19c-21d5-441e-bab0-bf73b4a2acea",
+          "url": "https://huggingface.co/Kijai/LTX2.3_comfy/resolve/main/vae/LTX23_video_vae_bf16.safetensors?download=true",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/vae",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "c20d42d7-1be7-4fbb-8888-2449b6815c43",
+      "name": "ltx-2.3-spatial-upscaler",
+      "downloadLinks": [
+        {
+          "id": "7515fe99-3e01-4631-b7d6-6e64b53f305f",
+          "url": "https://huggingface.co/Lightricks/LTX-2.3/resolve/main/ltx-2.3-spatial-upscaler-x2-1.0.safetensors?download=true",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/latent_upscale_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "da5126d5-b61e-4b3d-b092-d140597161e8",
+      "name": "ltx-2.3_text_projection_bf16",
+      "downloadLinks": [
+        {
+          "id": "693d16ed-7f79-488c-98e4-db76679ba58d",
+          "url": "https://huggingface.co/Kijai/LTX2.3_comfy/resolve/main/text_encoders/ltx-2.3_text_projection_bf16.safetensors?download=true",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/text_encoders",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "e76a480b-50d6-48ad-a6cd-9f7f0af8eab8",
+      "name": "gemma_3_12B_it_fp4_mixed",
+      "downloadLinks": [
+        {
+          "id": "ca2b5213-255b-48d8-a9cc-3de22f57408f",
+          "url": "https://huggingface.co/Comfy-Org/ltx-2/resolve/main/split_files/text_encoders/gemma_3_12B_it_fp4_mixed.safetensors?download=true",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/text_encoders",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    }
+  ]
+}

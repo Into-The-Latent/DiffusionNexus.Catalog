@@ -1,0 +1,151 @@
+{
+  "id": "6bc68a3f-2e93-4866-9827-25d666d4249a",
+  "name": "Ideogram-4.0",
+  "description": "**Ideogram 4** \u2014 Ideogram AI\u0027s open-weight release of their flagship model, known for best-in-class typography and design-oriented image generation.\n\n- Excellent text rendering and layout accuracy for posters, logos, and UI mockups\n- fp8/nvfp4/int8 and \u0022unconditional\u0022 checkpoint variants available\n- Non-commercial license; packaged for ComfyUI via Comfy-Org and this project\u0027s own AI2Go-Utils node\n\nIncludes the **Ideogram text2Image** workflow by AI-Knowledge2Go.",
+  "version": 1,
+  "subVersion": 7,
+  "isReleaseConfig": true,
+  "isLegacy": false,
+  "workloadTarget": "Installer",
+  "workflowType": "Image",
+  "thumbnail": "thumbnail.webp",
+  "repository": {
+    "type": "ComfyUI",
+    "repositoryUrl": "https://github.com/comfyanonymous/ComfyUI",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": true,
+    "virtualEnvironmentName": "venv",
+    "installTriton": true,
+    "installSageAttention": true
+  },
+  "torch": {
+    "torchVersion": "2.8.0",
+    "cudaVersion": "12.8",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": "24,32"
+  },
+  "installLamaCpp": false,
+  "selectedLamaCppWheelId": null,
+  "gitRepositories": [
+    "4ce7b7f6-9374-4aab-a00e-fec2448c28df",
+    "b3e6754c-a5cc-42a9-8943-cd5fe7581b2f",
+    "eb1bd9c2-208a-4e01-a46a-4740ebae9ab5",
+    "bb68fb22-52c1-428f-93a3-106e44d8fcf8",
+    "22c44679-20c2-4320-bfe7-dc1c9cd66f31",
+    "4b770405-17dc-48a8-8572-86edb36cbe41"
+  ],
+  "modelDownloads": [
+    {
+      "id": "2c940eb4-19c5-4d96-8552-767d66c9bbe7",
+      "name": "flux2-vae",
+      "downloadLinks": [
+        {
+          "id": "5c712212-0817-4966-a170-4a05ad18bf48",
+          "url": "https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/vae",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "3740a16a-bb9c-40b4-9720-b7b26832b1fc",
+      "name": "ideogram4_fp8",
+      "downloadLinks": [
+        {
+          "id": "44e3206a-33be-46f4-beb0-4f6ebd3e1a07",
+          "url": "https://huggingface.co/Comfy-Org/Ideogram-4/resolve/main/diffusion_models/ideogram4_fp8_scaled.safetensors",
+          "vramProfile": "VRAM_32GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "9e0c4c71-2456-4f04-bb4e-7205bdebefec",
+          "url": "https://huggingface.co/bertbobson/Ideogram-4-INT8-ConvRot/blob/main/ideogram4-int8-ConvRot.safetensors",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "8187f8c8-a5f9-46f7-9655-12c15f0e94c1",
+      "name": "ideogram4_unconditional",
+      "downloadLinks": [
+        {
+          "id": "b25e79cc-759f-4bf8-9cef-aec16389a1ab",
+          "url": "https://huggingface.co/Comfy-Org/Ideogram-4/resolve/main/diffusion_models/ideogram4_unconditional_fp8_scaled.safetensors",
+          "vramProfile": "VRAM_32GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "1a65f126-018a-41c0-8359-855902aad25e",
+          "url": "https://huggingface.co/bertbobson/Ideogram-4-INT8-ConvRot/blob/main/ideogram4-unconditional-int8-ConvRot.safetensors",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "e2a9c67a-f06a-449a-9cd6-1f90c4ab4b3d",
+      "name": "qwen3vl_8b_fp8_scaled",
+      "downloadLinks": [
+        {
+          "id": "e46ee7d8-bf69-43e1-b26a-b8a32c4911ab",
+          "url": "https://huggingface.co/Comfy-Org/Qwen3-VL/resolve/main/text_encoders/qwen3vl_8b_fp8_scaled.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/text_encoders",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    }
+  ]
+}

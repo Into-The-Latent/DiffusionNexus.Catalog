@@ -1,0 +1,9 @@
+{
+  "id": "7a4ca951-f4d5-4956-b9b5-d65cee77f862",
+  "name": "Z-Image-Turbo-Upscale",
+  "version": 1,
+  "subVersion": 0,
+  "workloads": [
+    "b853eb7c-0a0e-48a6-985e-e32b2f8848f5"
+  ]
+}

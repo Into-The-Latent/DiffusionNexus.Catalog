@@ -1,0 +1,222 @@
+{
+  "id": "e358f5aa-5204-4c5f-a1ed-266265c1f413",
+  "name": "LTX-2-3-V1.1-Director-GGUF",
+  "description": "**LTX-2.3 V1.1** (Lightricks) \u2014 22B text/image-to-video model with synchronized audio, GGUF quantized, plus the new **Director** workflow for explicit camera/shot control.\n\n- Same generation quality as the base LTX-2.3 pack, updated to the V1.1 checkpoint\n- Director workflow adds cinematography-style controls (camera moves, shot composition) on top of standard generation\n\nIncludes five workflows by AIKnowledge2Go: Text2Video, Image2Video, Text\u002BAudio2Video, Image\u002BAudio2Video, and Director V2 (with the older Director flow kept for compatibility).",
+  "version": 1,
+  "subVersion": 9,
+  "isReleaseConfig": true,
+  "isLegacy": false,
+  "workloadTarget": "Installer",
+  "workflowType": "Video",
+  "thumbnail": "thumbnail.webp",
+  "repository": {
+    "type": "ComfyUI",
+    "repositoryUrl": "https://github.com/comfyanonymous/ComfyUI",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": true,
+    "virtualEnvironmentName": "venv",
+    "installTriton": true,
+    "installSageAttention": true
+  },
+  "torch": {
+    "torchVersion": "2.8.0",
+    "cudaVersion": "12.8",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": "12,16,24,32"
+  },
+  "installLamaCpp": false,
+  "selectedLamaCppWheelId": null,
+  "gitRepositories": [
+    "4fb94538-ab8b-4e63-96d9-1b967d775fc0",
+    "b3e6754c-a5cc-42a9-8943-cd5fe7581b2f",
+    "8a662629-0eeb-41a1-8c28-1916e08e20b9",
+    "bb68fb22-52c1-428f-93a3-106e44d8fcf8",
+    "ff69cddc-aac4-4884-b46f-6db2ec467d19",
+    "d384f472-f37c-4a34-ad6e-b7663aee593f",
+    "22c44679-20c2-4320-bfe7-dc1c9cd66f31",
+    "9caab870-67c8-411c-9b8c-30a40819f77f",
+    "4b770405-17dc-48a8-8572-86edb36cbe41"
+  ],
+  "modelDownloads": [
+    {
+      "id": "2954048c-131a-45ff-bfce-62bbbcd54056",
+      "name": "gemma_3_12B_it_fp4_mixed",
+      "downloadLinks": [
+        {
+          "id": "fdce5bed-8078-4313-ba94-0e86e7c797af",
+          "url": "https://huggingface.co/Comfy-Org/ltx-2/resolve/main/split_files/text_encoders/gemma_3_12B_it_fp4_mixed.safetensors?download=true",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/text_encoders",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "37caca9e-a050-407a-8962-6ea4ef6e7df8",
+      "name": "ltx-2.3-spatial-upscaler-2x-1.1",
+      "downloadLinks": [
+        {
+          "id": "3205edc9-3787-4c51-97db-6357b5ded983",
+          "url": "https://huggingface.co/Lightricks/LTX-2.3/resolve/main/ltx-2.3-spatial-upscaler-x2-1.1.safetensors?download=true",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/latent_upscale_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "49e08107-5fb7-4051-a366-d0dde725a3bd",
+      "name": "MelBandRoformer",
+      "downloadLinks": [
+        {
+          "id": "ce395a25-6ac2-41d0-8fcf-6ef7f9c71b44",
+          "url": "https://huggingface.co/Kijai/MelBandRoFormer_comfy/resolve/main/MelBandRoformer_fp32.safetensors?download=true",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "e0ea4628-8e01-43ea-abee-5d509cc3cd1a",
+          "url": "https://huggingface.co/Kijai/MelBandRoFormer_comfy/resolve/main/MelBandRoformer_fp16.safetensors?download=true",
+          "vramProfile": "VRAM_12GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "657acbf3-5ff4-439e-87f7-b0e594916b8a",
+      "name": "LTX23_video_vae",
+      "downloadLinks": [
+        {
+          "id": "991a63bd-1638-4a0a-976c-19b32d299a99",
+          "url": "https://huggingface.co/Kijai/LTX2.3_comfy/resolve/main/vae/LTX23_video_vae_bf16.safetensors?download=true",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/vae",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "681d7125-59e8-4497-b84a-b893f40c21a6",
+      "name": "ltx-2.3_text_projection_bf16",
+      "downloadLinks": [
+        {
+          "id": "759ec812-aa9c-4110-8d30-88866afc001b",
+          "url": "https://huggingface.co/Kijai/LTX2.3_comfy/resolve/main/text_encoders/ltx-2.3_text_projection_bf16.safetensors?download=true",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/text_encoders",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "6d6304a9-938c-4c17-92c2-36a05eae99d2",
+      "name": "ltx-2-3-22b-V1.1-dev",
+      "downloadLinks": [
+        {
+          "id": "76317e65-dfd8-4261-bb21-40bc1311d3ea",
+          "url": "https://huggingface.co/QuantStack/LTX-2.3-GGUF/resolve/main/LTX-2.3-distilled-1.1/LTX-2.3-22B-distilled-1.1-Q2_K.gguf?download=true",
+          "vramProfile": "VRAM_12GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "62297462-fec2-4724-bf82-e9f128685d48",
+          "url": "https://huggingface.co/QuantStack/LTX-2.3-GGUF/resolve/main/LTX-2.3-distilled-1.1/LTX-2.3-22B-distilled-1.1-Q3_K_S.gguf?download=true",
+          "vramProfile": "VRAM_16GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "42aff9d5-ce9c-4b75-9392-3ed46f938879",
+          "url": "https://huggingface.co/QuantStack/LTX-2.3-GGUF/resolve/main/LTX-2.3-distilled-1.1/LTX-2.3-22B-distilled-1.1-Q8_0.gguf?download=true",
+          "vramProfile": "VRAM_32GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "eae655f9-5cb6-40b5-b9a0-55b2158353b7",
+          "url": "https://huggingface.co/QuantStack/LTX-2.3-GGUF/resolve/main/LTX-2.3-distilled-1.1/LTX-2.3-22B-distilled-1.1-Q5_K_M.gguf?download=true",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "9e1d2657-9ed6-4e32-9b6b-4c97f50c12aa",
+      "name": "LTX23_audio_vae",
+      "downloadLinks": [
+        {
+          "id": "ec492d36-0719-4d50-8143-e436b779e334",
+          "url": "https://huggingface.co/Kijai/LTX2.3_comfy/resolve/main/vae/LTX23_audio_vae_bf16.safetensors?download=true",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/vae",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    }
+  ]
+}

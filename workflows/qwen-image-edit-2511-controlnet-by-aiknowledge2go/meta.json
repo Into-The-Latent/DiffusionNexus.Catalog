@@ -1,0 +1,10 @@
+{
+  "id": "ec65ce05-29b9-48a2-93ae-6d93535f29fd",
+  "name": "Qwen_image_edit_2511-ControlNet-By AIKnowledge2Go",
+  "version": 1,
+  "subVersion": 1,
+  "workloads": [
+    "3b463f60-a862-4135-ac0f-0ab18d8e3eb8",
+    "725ffdfb-22b6-436f-905a-ce678bda287d"
+  ]
+}

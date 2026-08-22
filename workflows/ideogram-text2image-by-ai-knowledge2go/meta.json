@@ -1,0 +1,9 @@
+{
+  "id": "c85d1989-a1ba-4e0e-a331-8899bac0b3a5",
+  "name": "Ideogram-text2Image-by-AI-Knowledge2Go",
+  "version": 1,
+  "subVersion": 1,
+  "workloads": [
+    "6bc68a3f-2e93-4866-9827-25d666d4249a"
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "id": "0d7a24d9-80ae-443b-9ff3-497cd54f5b7b",
+  "name": "Wan 2.2 - GGUF",
+  "description": "**Wan2.2 A14B** (Alibaba Wan-AI) \u2014 a mixture-of-experts text/image-to-video model, GGUF quantized (via the calcuis GGUF loader) with the Lightx2v 4-step LoRA for fast sampling.\n\n- Separate high-noise/low-noise expert checkpoints for both text-to-video and image-to-video\n- 4-step LoRA cuts sampling time dramatically versus the full-step schedule\n\nIncludes three workflows by AI Knowledge2Go: **T2V**, **I2V**, and **Extend Video (I2V)**.",
+  "version": 1,
+  "subVersion": 3,
+  "isReleaseConfig": true,
+  "isLegacy": false,
+  "workloadTarget": "Installer",
+  "workflowType": "Video",
+  "thumbnail": "thumbnail.webp",
+  "repository": {
+    "type": "ComfyUI",
+    "repositoryUrl": "https://github.com/comfyanonymous/ComfyUI",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": true,
+    "virtualEnvironmentName": "venv",
+    "installTriton": true,
+    "installSageAttention": true
+  },
+  "torch": {
+    "torchVersion": "2.8.0",
+    "cudaVersion": "12.8",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": "8,12,16,24,32"
+  },
+  "installLamaCpp": false,
+  "selectedLamaCppWheelId": null,
+  "gitRepositories": [
+    "95a15b05-9b3d-4a37-8636-9f09513cfad4",
+    "ad0e827d-f5dd-4bce-ba8b-23900ac5f5eb",
+    "b41334fa-d246-4f5e-983c-9560cf6c2efd",
+    "b3e6754c-a5cc-42a9-8943-cd5fe7581b2f",
+    "8a662629-0eeb-41a1-8c28-1916e08e20b9",
+    "bb68fb22-52c1-428f-93a3-106e44d8fcf8",
+    "22c44679-20c2-4320-bfe7-dc1c9cd66f31",
+    "93f9be80-9cdb-4201-a49f-42279aeed9a8",
+    "4b770405-17dc-48a8-8572-86edb36cbe41",
+    "78c14e45-59d9-475e-a74d-5ba0b1adc493",
+    "1f4b6839-7563-4fa2-abe1-62673530d3ed",
+    "3c83a410-eff3-471b-ba02-2704fa0825f3"
+  ],
+  "modelDownloads": [
+    {
+      "id": "0f6b69b2-704b-42e6-80ec-1571b2d4a085",
+      "name": "Text Encoder (UMT5-XXL)",
+      "downloadLinks": [
+        {
+          "id": "1c5f492b-a636-419f-81d0-cd9e07d93e98",
+          "url": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/text_encoders",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "1c2639db-8728-4514-9ad7-d2ce29b33476",
+      "name": "Wan2.2-I2V-A14B-GGUF - High",
+      "downloadLinks": [
+        {
+          "id": "9e8fe1f8-9c6b-4316-bbab-afc56354e09c",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/resolve/main/HighNoise/Wan2.2-I2V-A14B-HighNoise-Q8_0.gguf?download=true",
+          "vramProfile": "VRAM_32GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "f91abb7e-d3f2-4022-9558-61b60927f2df",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/resolve/main/HighNoise/Wan2.2-I2V-A14B-HighNoise-Q4_K_S.gguf?download=true",
+          "vramProfile": "VRAM_12GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "1d7e3fd2-d8a7-44ae-9826-497c92066940",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/resolve/main/HighNoise/Wan2.2-I2V-A14B-HighNoise-Q3_K_S.gguf?download=true",
+          "vramProfile": "VRAM_8GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "c364eabb-aff2-4965-84ac-eb18949b0516",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/resolve/main/HighNoise/Wan2.2-I2V-A14B-HighNoise-Q6_K.gguf?download=true",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "b9d27dc0-a38f-42a2-83e9-1019eb643963",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/resolve/main/HighNoise/Wan2.2-I2V-A14B-HighNoise-Q5_K_S.gguf?download=true",
+          "vramProfile": "VRAM_16GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "2d319f38-19db-4d50-96a8-0a4cd22aa342",
+      "name": "wan2.2_i2v_lightx2v_4steps_lora_v1_high_noise",
+      "downloadLinks": [
+        {
+          "id": "31305527-afc7-4031-b994-36a192db9f62",
+          "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/loras/wan2.2_i2v_lightx2v_4steps_lora_v1_high_noise.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/loras",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "2de1f26c-79e2-44dc-9e5e-0bc7918877dc",
+      "name": "wan2.2_t2v_lightx2v_4steps_lora_v1.1_low_noise",
+      "downloadLinks": [
+        {
+          "id": "8f6aca9a-5608-4077-ab26-2fcd4395936a",
+          "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/loras/wan2.2_t2v_lightx2v_4steps_lora_v1.1_low_noise.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/loras",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "9b5e8675-2176-496d-9fa5-bb5db31abea6",
+      "name": "wan2.2_t2v_lightx2v_4steps_lora_v1.1_high_noise",
+      "downloadLinks": [
+        {
+          "id": "a875bb83-3a9c-4347-a940-fdb38618239e",
+          "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/loras/wan2.2_t2v_lightx2v_4steps_lora_v1.1_high_noise.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/loras",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "acd935dd-2a85-4b6c-a369-ab3f81099506",
+      "name": "Wan2.2-I2V-A14B-GGUF - Low",
+      "downloadLinks": [
+        {
+          "id": "9f33cfad-c7bc-4a00-9277-d809faa49487",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/resolve/main/LowNoise/Wan2.2-I2V-A14B-LowNoise-Q5_K_S.gguf?download=true",
+          "vramProfile": "VRAM_16GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "871d10d0-7652-47ae-8b40-7aa129f2a7d6",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/resolve/main/LowNoise/Wan2.2-I2V-A14B-LowNoise-Q4_1.gguf?download=true",
+          "vramProfile": "VRAM_12GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "d298986d-0faf-41d2-abf9-cbb03ba62ac3",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/resolve/main/LowNoise/Wan2.2-I2V-A14B-LowNoise-Q3_K_S.gguf?download=true",
+          "vramProfile": "VRAM_8GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "39762ab5-a903-417e-86a2-361246e97777",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/resolve/main/LowNoise/Wan2.2-I2V-A14B-LowNoise-Q8_0.gguf?download=true",
+          "vramProfile": "VRAM_32GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "3f9d0d25-314e-443d-a211-24a4e4bf9d66",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/resolve/main/LowNoise/Wan2.2-I2V-A14B-LowNoise-Q6_K.gguf?download=true",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "cb56ab7b-0554-42bc-9111-36b51a3d141c",
+      "name": "Wan2.2-T2V-A14B-GGUF-Low",
+      "downloadLinks": [
+        {
+          "id": "50b41da1-96b9-4a56-b182-2f3ad99d8aa9",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/LowNoise/Wan2.2-T2V-A14B-LowNoise-Q4_K_S.gguf?download=true",
+          "vramProfile": "VRAM_12GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "700a33a5-e0e1-47a6-a17c-ac803974be9e",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/LowNoise/Wan2.2-T2V-A14B-LowNoise-Q5_K_S.gguf?download=true",
+          "vramProfile": "VRAM_16GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "1f05345a-0f37-45b8-a73d-fc7912d1f948",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/LowNoise/Wan2.2-T2V-A14B-LowNoise-Q6_K.gguf?download=true",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "d118ec83-17e5-4967-adac-c3a3f0b3bf72",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/LowNoise/Wan2.2-T2V-A14B-LowNoise-Q8_0.gguf?download=true",
+          "vramProfile": "VRAM_32GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "eeaa5148-3787-41c7-bb3b-ed63a2a9d0eb",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/LowNoise/Wan2.2-T2V-A14B-LowNoise-Q3_K_S.gguf?download=true",
+          "vramProfile": "VRAM_8GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "ce34af31-9136-4691-95b1-3ae284618d31",
+      "name": "Wan2.2-T2V-A14B-GGUF-High",
+      "downloadLinks": [
+        {
+          "id": "ca8dd26f-ebf2-4905-82b2-1ff31d561a9a",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/HighNoise/Wan2.2-T2V-A14B-HighNoise-Q5_K_S.gguf?download=true",
+          "vramProfile": "VRAM_16GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "2a780215-822c-4574-9a12-ba13f05a1cf2",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/HighNoise/Wan2.2-T2V-A14B-HighNoise-Q3_K_S.gguf?download=true",
+          "vramProfile": "VRAM_8GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "b2b10720-ae1d-4132-8b2a-731a4687b426",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/HighNoise/Wan2.2-T2V-A14B-HighNoise-Q6_K.gguf?download=true",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "6b1526ab-d8c8-44d7-b8ac-0f95ff42ffe8",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/HighNoise/Wan2.2-T2V-A14B-HighNoise-Q8_0.gguf?download=true",
+          "vramProfile": "VRAM_32GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "12f5deda-4913-4866-8aa0-552f4ceb79fe",
+          "url": "https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/HighNoise/Wan2.2-T2V-A14B-HighNoise-Q4_K_S.gguf?download=true",
+          "vramProfile": "VRAM_12GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "f640775e-4cbd-4b13-8875-8c5098f16ad7",
+      "name": "wan2.2_i2v_lightx2v_4steps_lora_v1_low_noise",
+      "downloadLinks": [
+        {
+          "id": "b61bb78d-fecc-44e3-944d-4ada06c8a991",
+          "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/loras/wan2.2_i2v_lightx2v_4steps_lora_v1_low_noise.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/loras",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "ffeae594-a1a0-467b-8aaf-a74cea25b9b1",
+      "name": "VAE",
+      "downloadLinks": [
+        {
+          "id": "98d59646-313b-4712-a82d-defc1e0be102",
+          "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/vae",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    }
+  ]
+}

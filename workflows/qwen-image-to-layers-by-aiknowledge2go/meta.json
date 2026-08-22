@@ -1,0 +1,9 @@
+{
+  "id": "84cdc695-fe5f-4750-b1ac-df1966f16ac4",
+  "name": "Qwen-Image-To-Layers-By AIKnowledge2Go",
+  "version": 1,
+  "subVersion": 1,
+  "workloads": [
+    "725ffdfb-22b6-436f-905a-ce678bda287d"
+  ]
+}

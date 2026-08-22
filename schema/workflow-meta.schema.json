@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DiffusionNexus workflow meta",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "version", "subVersion", "workloads"],
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "name": { "type": "string", "minLength": 1 },
+    "version": { "type": "integer", "minimum": 1 },
+    "subVersion": { "type": "integer", "minimum": 0 },
+    "workloads": { "type": "array", "items": { "type": "string", "format": "uuid" } }
+  }
+}

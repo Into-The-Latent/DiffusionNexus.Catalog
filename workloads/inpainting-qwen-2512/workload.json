@@ -1,0 +1,178 @@
+{
+  "id": "4c486765-a4c1-4e94-acc2-bbac0e405b6a",
+  "name": "Inpainting-Qwen 2512",
+  "description": "**Qwen-Image-2512 \u002B InstantX ControlNet Inpainting**, running as a Diffusion Nexus Core capability \u2014 this is the backend for the app\u0027s built-in Inpaint tool, not a standalone ComfyUI workload.\n\n- Qwen-Image-2512 is Alibaba\u0027s latest Qwen-Image checkpoint (GGUF quantized here)\n- InstantX\u0027s ControlNet gives precise, mask-guided inpainting rather than a full re-generation\n- 4-step Lightning LoRA keeps inference fast\n\nIncludes the \u0060Inpaint-Qwen-2512\u0060 workflow.",
+  "version": 1,
+  "subVersion": 17,
+  "isReleaseConfig": true,
+  "isLegacy": false,
+  "workloadTarget": "DiffusionNexusCore",
+  "workflowType": "Image",
+  "thumbnail": "thumbnail.webp",
+  "repository": {
+    "type": "ComfyUI",
+    "repositoryUrl": "https://github.com/comfyanonymous/ComfyUI",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": true,
+    "virtualEnvironmentName": "venv",
+    "installTriton": true,
+    "installSageAttention": true
+  },
+  "torch": {
+    "torchVersion": "2.8.0",
+    "cudaVersion": "12.8",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": "8,12,16,24,32"
+  },
+  "installLamaCpp": false,
+  "selectedLamaCppWheelId": null,
+  "gitRepositories": [
+    "4fb94538-ab8b-4e63-96d9-1b967d775fc0"
+  ],
+  "modelDownloads": [
+    {
+      "id": "774277e5-350a-46ac-8cbb-dafb532a766b",
+      "name": "qwen_image_vae",
+      "downloadLinks": [
+        {
+          "id": "e1654978-77ea-445e-9417-c6eb6c978420",
+          "url": "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/vae",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "94428494-fafd-42c1-967c-f0b3544723d4",
+      "name": "qwen_2.5_vl_7b_fp8_scaled",
+      "downloadLinks": [
+        {
+          "id": "b3c55ac5-a664-4ebf-961d-390d2e4b3e32",
+          "url": "https://huggingface.co/Comfy-Org/HunyuanVideo_1.5_repackaged/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/text_encoders",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "de378380-2dc2-4aca-9c97-ffa5e1ae5b78",
+      "name": "Qwen-Image-InstantX-ControlNet-Inpainting",
+      "downloadLinks": [
+        {
+          "id": "a56c10ba-a5c4-4a7c-9bce-88e1b37dea3c",
+          "url": "https://huggingface.co/InstantX/Qwen-Image-ControlNet-Inpainting/resolve/main/diffusion_pytorch_model.safetensors?download=true",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/controlnet",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "ee22d9de-7900-44be-aa84-6d27bf7bef1a",
+      "name": "Qwen-Image-Lightning-4steps-V1.0",
+      "downloadLinks": [
+        {
+          "id": "f34761a8-9ee7-4a39-866b-c64e46a5632e",
+          "url": "https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-Lightning-4steps-V1.0.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/loras",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "fa26f514-951b-4351-be3d-76a292ccf54f",
+      "name": "Qwen-Image-2512-GGUF",
+      "downloadLinks": [
+        {
+          "id": "d0c550ac-9672-417c-b1d0-f85b0f6bbbf0",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-2512-GGUF/resolve/main/qwen-image-2512-Q4_0.gguf?download=true",
+          "vramProfile": "VRAM_12GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "a787f721-d09c-4e36-bb53-4ed14e4024c2",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-2512-GGUF/resolve/main/qwen-image-2512-Q6_K.gguf?download=true",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "b99091b3-b0c6-458c-9886-ac42719a8b5d",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-2512-GGUF/resolve/main/qwen-image-2512-Q2_K.gguf?download=true",
+          "vramProfile": "VRAM_8GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "121037a1-b877-41b4-bf5b-4976ef7e237c",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-2512-GGUF/resolve/main/qwen-image-2512-Q4_K_S.gguf?download=true",
+          "vramProfile": "VRAM_16GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "f5e1ca85-9e8e-4f82-abc9-5c79700dfefd",
+          "url": "https://huggingface.co/unsloth/Qwen-Image-2512-GGUF/resolve/main/qwen-image-2512-Q8_0.gguf?download=true",
+          "vramProfile": "VRAM_32GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    }
+  ]
+}

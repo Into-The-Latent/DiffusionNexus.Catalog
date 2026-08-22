@@ -1,0 +1,9 @@
+{
+  "id": "f41a8fcb-c6d0-4983-b8c1-0bd970e4d567",
+  "name": "3.Krea2-Turbo-Batch-Text2Image\u002BUpscale by IntoTheLatent",
+  "version": 1,
+  "subVersion": 1,
+  "workloads": [
+    "e79c079a-2fd7-4fe7-8086-23731092555d"
+  ]
+}

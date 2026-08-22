@@ -1,0 +1,9 @@
+{
+  "id": "93be39fb-57e7-4d40-95b3-c20d490d4b51",
+  "name": "Qwen-Text-To-Layers-By AIKnowledge2Go",
+  "version": 1,
+  "subVersion": 1,
+  "workloads": [
+    "725ffdfb-22b6-436f-905a-ce678bda287d"
+  ]
+}
