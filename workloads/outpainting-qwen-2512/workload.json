@@ -98,15 +98,7 @@
     {
       "id": "62685407-3423-4224-9b6d-9a473b2ac7bd",
       "name": "Qwen 3 VL",
-      "downloadLinks": [
-        {
-          "id": "47af6408-468e-4f11-ba38-c83be7c6a757",
-          "url": "Link",
-          "vramProfile": null,
-          "destination": "",
-          "enabled": true
-        }
-      ],
+      "downloadLinks": [],
       "url": "",
       "destination": "",
       "vramProfile": "VRAM_16GB",
