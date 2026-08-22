@@ -1,0 +1,61 @@
+name: Catalog CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-dotnet@v4
+        with: { dotnet-version: '10.0.x' }
+      - name: Install dn-catalog
+        env:
+          PACKAGES_READ_TOKEN: ${{ secrets.PACKAGES_READ_TOKEN }}
+        run: |
+          dotnet nuget add source https://nuget.pkg.github.com/Little-God1983/index.json --name github-littlegod --username Little-God1983 --password "$PACKAGES_READ_TOKEN" --store-password-in-clear-text
+          dotnet tool install -g DiffusionNexus.Installer.SDK.Catalog.Tool --prerelease
+      - name: Baseline (previous stable manifest)
+        continue-on-error: true
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: gh release download --pattern manifest.json --dir baseline || true
+      - name: Validate
+        run: |
+          if [ -f baseline/manifest.json ]; then
+            dn-catalog validate . --online --baseline baseline/manifest.json
+          else
+            dn-catalog validate . --online
+          fi
+
+  preview:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-dotnet@v4
+        with: { dotnet-version: '10.0.x' }
+      - name: Install dn-catalog
+        env:
+          PACKAGES_READ_TOKEN: ${{ secrets.PACKAGES_READ_TOKEN }}
+        run: |
+          dotnet nuget add source https://nuget.pkg.github.com/Little-God1983/index.json --name github-littlegod --username Little-God1983 --password "$PACKAGES_READ_TOKEN" --store-password-in-clear-text
+          dotnet tool install -g DiffusionNexus.Installer.SDK.Catalog.Tool --prerelease
+      - name: Pack preview (next stable number)
+        run: |
+          LAST=$(git tag -l 'v*' | sed 's/^v//' | sort -n | tail -1)
+          NEXT=$(( ${LAST:-0} + 1 ))
+          dn-catalog pack . --out dist --version "$NEXT" --channel preview --commit "$GITHUB_SHA"
+      - name: Re-point the preview pre-release
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          gh release delete preview --yes --cleanup-tag || true
+          gh release create preview dist/catalog.zip dist/manifest.json --prerelease --title "Preview ($(echo $GITHUB_SHA | cut -c1-7))" --notes "Rebuilt from main on every push. Not for general use."
