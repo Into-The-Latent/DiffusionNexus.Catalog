@@ -53,9 +53,9 @@ jobs:
         run: |
           LAST=$(git tag -l 'v*' | sed 's/^v//' | sort -n | tail -1)
           NEXT=$(( ${LAST:-0} + 1 ))
-          dn-catalog pack . --out dist --version "$NEXT" --channel preview --commit "$GITHUB_SHA"
+          dn-catalog pack . --out ../dist --version "$NEXT" --channel preview --commit "$GITHUB_SHA"
       - name: Re-point the preview pre-release
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
           gh release delete preview --yes --cleanup-tag || true
-          gh release create preview dist/catalog.zip dist/manifest.json --prerelease --title "Preview ($(echo $GITHUB_SHA | cut -c1-7))" --notes "Rebuilt from main on every push. Not for general use."
+          gh release create preview ../dist/catalog.zip ../dist/manifest.json --prerelease --title "Preview ($(echo $GITHUB_SHA | cut -c1-7))" --notes "Rebuilt from main on every push. Not for general use."
