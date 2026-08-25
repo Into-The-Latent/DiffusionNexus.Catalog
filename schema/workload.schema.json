@@ -13,7 +13,7 @@
     "isReleaseConfig": { "type": "boolean" },
     "isLegacy": { "type": "boolean" },
     "workloadTarget": { "enum": ["Installer", "DiffusionNexusCore"] },
-    "workflowType": { "enum": ["Image", "Video"] },
+    "workflowType": { "enum": ["Image", "Video", "Audio"] },
     "thumbnail": { "type": ["string", "null"] },
     "repository": {
       "type": "object", "additionalProperties": false,
