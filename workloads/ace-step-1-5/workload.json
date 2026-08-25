@@ -3,11 +3,11 @@
   "name": "ACE-Step-1.5",
   "description": "**Open-source music foundation model** from StepFun/ACEMusic \u2014 full songs (vocals \u002B instrumental) from a text prompt or lyrics.\n\n- Generates a complete song in under 2 seconds on an A100, under 10 seconds on an RTX 3090\n- Runs locally on **less than 4GB VRAM** for the base model\n- Supports lightweight LoRA personalization \u2014 train a custom style from just a few reference songs\n- XL variant (4B DiT) available for higher fidelity, needs \u226512GB VRAM (offload) / \u226520GB recommended\n\nInstalls the ACE-Step 1.5 repository directly (not a ComfyUI workload).",
   "version": 1,
-  "subVersion": 2,
+  "subVersion": 3,
   "isReleaseConfig": true,
   "isLegacy": false,
   "workloadTarget": "Installer",
-  "workflowType": "Image",
+  "workflowType": "Audio",
   "thumbnail": "thumbnail.webp",
   "repository": {
     "type": "AceStep",
