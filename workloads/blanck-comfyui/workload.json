@@ -2,8 +2,8 @@
   "id": "e4b40bf4-7cb1-4765-8ff2-24e663b6a271",
   "name": "Blanck-ComfyUI",
   "description": "A **plain ComfyUI install** with only ComfyUI-Manager added \u2014 no models, no custom nodes, no workflows.\n\nUse this when you want to start from a clean ComfyUI and build up your own setup manually, or as a base before installing workload packs by hand through the Manager.",
-  "version": 1,
-  "subVersion": 2,
+  "version": 2,
+  "subVersion": 0,
   "isReleaseConfig": false,
   "isLegacy": false,
   "workloadTarget": "Installer",
@@ -27,8 +27,8 @@
     "installSageAttention": false
   },
   "torch": {
-    "torchVersion": "2.8.0",
-    "cudaVersion": "12.8",
+    "torchVersion": "2.11.0",
+    "cudaVersion": "13.0",
     "indexUrl": ""
   },
   "paths": {
