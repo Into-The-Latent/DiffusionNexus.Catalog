@@ -2,8 +2,8 @@
   "id": "725ffdfb-22b6-436f-905a-ce678bda287d",
   "name": "Qwen-Image-Edit-2511 - 2512 - Layered",
   "description": "The **full Qwen-Image bundle**: Qwen-Image-Edit-2511 (instruction-based editing), Qwen-Image-2512 (text-to-image), and **Qwen-Image-Layered** (native layer-decomposed generation \u2014 outputs separable foreground/background/object layers, PSD-style) \u2014 all GGUF quantized.\n\n- Edit-2511 handles natural-language photo edits (\u0022remove the object\u0022, \u0022change the lighting\u0022)\n- Layered is unique for producing editable, separated layers directly from a prompt instead of a flattened image\n- 4-step Lightning LoRAs keep both models fast\n\nIncludes five workflows by AIKnowledge2Go: Image Edit, Image-to-Layers, Text-to-Layers, 2512 Text2Image, and an Edit \u002B ControlNet flow.",
-  "version": 1,
-  "subVersion": 12,
+  "version": 2,
+  "subVersion": 0,
   "isReleaseConfig": true,
   "isLegacy": false,
   "workloadTarget": "Installer",
@@ -27,8 +27,8 @@
     "installSageAttention": true
   },
   "torch": {
-    "torchVersion": "2.8.0",
-    "cudaVersion": "12.8",
+    "torchVersion": "2.11.0",
+    "cudaVersion": "13.0",
     "indexUrl": ""
   },
   "paths": {

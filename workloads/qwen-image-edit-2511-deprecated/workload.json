@@ -3,9 +3,9 @@
   "name": "Qwen-Image-Edit-2511 - Deprecated",
   "description": "*Deprecated \u2014 superseded by the \u00222511 - 2512 - Layered\u0022 pack above, which includes everything here plus Qwen-Image-2512 and Qwen-Image-Layered.*\n\n**Qwen-Image-Edit-2511** alone (GGUF quantized) \u2014 instruction-based photo editing with a 4-step Lightning LoRA. Includes the Image-Edit and Edit \u002B ControlNet workflows by AIKnowledge2Go.",
   "version": 1,
-  "subVersion": 6,
+  "subVersion": 7,
   "isReleaseConfig": false,
-  "isLegacy": false,
+  "isLegacy": true,
   "workloadTarget": "Installer",
   "workflowType": "Image",
   "thumbnail": "thumbnail.webp",
@@ -27,8 +27,8 @@
     "installSageAttention": true
   },
   "torch": {
-    "torchVersion": "2.8.0",
-    "cudaVersion": "12.8",
+    "torchVersion": "2.11.0",
+    "cudaVersion": "13.0",
     "indexUrl": ""
   },
   "paths": {

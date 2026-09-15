@@ -2,8 +2,8 @@
   "id": "6bc68a3f-2e93-4866-9827-25d666d4249a",
   "name": "Ideogram-4.0",
   "description": "**Ideogram 4** \u2014 Ideogram AI\u0027s open-weight release of their flagship model, known for best-in-class typography and design-oriented image generation.\n\n- Excellent text rendering and layout accuracy for posters, logos, and UI mockups\n- fp8/nvfp4/int8 and \u0022unconditional\u0022 checkpoint variants available\n- Non-commercial license; packaged for ComfyUI via Comfy-Org and this project\u0027s own AI2Go-Utils node\n\nIncludes the **Ideogram text2Image** workflow by AI-Knowledge2Go.",
-  "version": 1,
-  "subVersion": 7,
+  "version": 2,
+  "subVersion": 0,
   "isReleaseConfig": true,
   "isLegacy": false,
   "workloadTarget": "Installer",
@@ -27,8 +27,8 @@
     "installSageAttention": true
   },
   "torch": {
-    "torchVersion": "2.8.0",
-    "cudaVersion": "12.8",
+    "torchVersion": "2.11.0",
+    "cudaVersion": "13.0",
     "indexUrl": ""
   },
   "paths": {

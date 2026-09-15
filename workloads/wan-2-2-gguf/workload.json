@@ -3,7 +3,7 @@
   "name": "Wan 2.2 - GGUF",
   "description": "**Wan2.2 A14B** (Alibaba Wan-AI) \u2014 a mixture-of-experts text/image-to-video model, GGUF quantized (via the calcuis GGUF loader) with the Lightx2v 4-step LoRA for fast sampling.\n\n- Separate high-noise/low-noise expert checkpoints for both text-to-video and image-to-video\n- 4-step LoRA cuts sampling time dramatically versus the full-step schedule\n\nIncludes three workflows by AI Knowledge2Go: **T2V**, **I2V**, and **Extend Video (I2V)**.",
   "version": 1,
-  "subVersion": 3,
+  "subVersion": 4,
   "isReleaseConfig": true,
   "isLegacy": false,
   "workloadTarget": "Installer",
@@ -27,8 +27,8 @@
     "installSageAttention": true
   },
   "torch": {
-    "torchVersion": "2.8.0",
-    "cudaVersion": "12.8",
+    "torchVersion": "2.11.0",
+    "cudaVersion": "13.0",
     "indexUrl": ""
   },
   "paths": {

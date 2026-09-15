@@ -2,8 +2,8 @@
   "id": "8063df6d-2cdd-4535-bc7c-d3fddbef05ab",
   "name": "FlashVSR-Video\u0026Image Upscale",
   "description": "**FlashVSR** (OpenImagingLab) \u2014 a streaming, diffusion-based super-resolution model for near real-time video and image upscaling, wrapped for ComfyUI via the \u0022Ultra Fast\u0022 node pack.\n\n- One-step diffusion upscaling \u2014 far faster than traditional multi-step SR pipelines\n- Handles both video and still-image upscaling\n\nIncludes two workflows by AIKnowledge2Go: **Video-Upscale-FlashVSR Ultra** and **Image-Upscale-FlashVSR Ultra**.",
-  "version": 1,
-  "subVersion": 5,
+  "version": 2,
+  "subVersion": 0,
   "isReleaseConfig": true,
   "isLegacy": false,
   "workloadTarget": "Installer",
@@ -27,8 +27,8 @@
     "installSageAttention": true
   },
   "torch": {
-    "torchVersion": "2.8.0",
-    "cudaVersion": "12.8",
+    "torchVersion": "2.11.0",
+    "cudaVersion": "13.0",
     "indexUrl": ""
   },
   "paths": {

@@ -2,10 +2,10 @@
   "id": "be99376d-c213-4375-94d0-2a9a4a4dc92c",
   "name": "LTX2 - GGUF - Legacy",
   "description": "**LTX-2** (Lightricks, 19B) \u2014 the predecessor to LTX-2.3, GGUF quantized. Superseded by the LTX-2.3 packs above, kept here for compatibility with existing workflows.\n\nIncludes camera-control and IC-LoRA detailer LoRAs, plus four workflows by AIKnowledge2Go: Text2Video, Image2Video, Text\u002BAudio2Video, and Image\u002BAudio2Video.",
-  "version": 1,
-  "subVersion": 14,
+  "version": 2,
+  "subVersion": 0,
   "isReleaseConfig": true,
-  "isLegacy": false,
+  "isLegacy": true,
   "workloadTarget": "Installer",
   "workflowType": "Image",
   "thumbnail": "thumbnail.webp",
@@ -27,8 +27,8 @@
     "installSageAttention": true
   },
   "torch": {
-    "torchVersion": "2.8.0",
-    "cudaVersion": "12.8",
+    "torchVersion": "2.11.0",
+    "cudaVersion": "13.0",
     "indexUrl": ""
   },
   "paths": {

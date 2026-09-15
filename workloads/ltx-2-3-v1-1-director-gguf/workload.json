@@ -2,8 +2,8 @@
   "id": "e358f5aa-5204-4c5f-a1ed-266265c1f413",
   "name": "LTX-2-3-V1.1-Director-GGUF",
   "description": "**LTX-2.3 V1.1** (Lightricks) \u2014 22B text/image-to-video model with synchronized audio, GGUF quantized, plus the new **Director** workflow for explicit camera/shot control.\n\n- Same generation quality as the base LTX-2.3 pack, updated to the V1.1 checkpoint\n- Director workflow adds cinematography-style controls (camera moves, shot composition) on top of standard generation\n\nIncludes five workflows by AIKnowledge2Go: Text2Video, Image2Video, Text\u002BAudio2Video, Image\u002BAudio2Video, and Director V2 (with the older Director flow kept for compatibility).",
-  "version": 1,
-  "subVersion": 9,
+  "version": 2,
+  "subVersion": 0,
   "isReleaseConfig": true,
   "isLegacy": false,
   "workloadTarget": "Installer",
@@ -27,8 +27,8 @@
     "installSageAttention": true
   },
   "torch": {
-    "torchVersion": "2.8.0",
-    "cudaVersion": "12.8",
+    "torchVersion": "2.11.0",
+    "cudaVersion": "13.0",
     "indexUrl": ""
   },
   "paths": {

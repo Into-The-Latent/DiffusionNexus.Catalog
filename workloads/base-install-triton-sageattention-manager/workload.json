@@ -2,8 +2,8 @@
   "id": "1f0a3aef-15d9-4b8a-80dc-b03f318e414f",
   "name": "Base-install-Triton-SageAttention-Manager",
   "description": "A **bare ComfyUI install** with **Triton** and **SageAttention** pre-installed and ComfyUI-Manager for adding nodes afterwards.\n\n- Triton compiles custom GPU kernels for supported nodes/attention implementations\n- SageAttention is a drop-in quantized attention kernel that noticeably speeds up sampling on supported cards with minimal quality loss\n- No models or workflows are bundled \u2014 this is a performance-tuned starting point, not a ready-to-run workload\n\nUse this when you want a ComfyUI base that\u0027s already primed for the faster attention backends other workload packs expect.",
-  "version": 1,
-  "subVersion": 1,
+  "version": 2,
+  "subVersion": 0,
   "isReleaseConfig": true,
   "isLegacy": false,
   "workloadTarget": "Installer",
@@ -27,8 +27,8 @@
     "installSageAttention": true
   },
   "torch": {
-    "torchVersion": "2.8.0",
-    "cudaVersion": "12.8",
+    "torchVersion": "2.11.0",
+    "cudaVersion": "13.0",
     "indexUrl": ""
   },
   "paths": {

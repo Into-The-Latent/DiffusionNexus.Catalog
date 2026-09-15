@@ -2,8 +2,8 @@
   "id": "e79c079a-2fd7-4fe7-8086-23731092555d",
   "name": "Krea-2-Turbo",
   "description": "**Krea 2 Turbo** \u2014 Krea AI\u0027s fast image generation and editing model, GGUF quantized with a dedicated Krea2Edit ComfyUI node.\n\n- Turbo-distilled for quick text-to-image and image-editing turnaround\n- \u0022Identity Edit\u0022 LoRA included for consistent-subject edits\n- Non-commercial license\n\nIncludes four workflows by **IntoTheLatent**: Text2Image\u002BUpscale, Upscale-only, Batch Text2Image\u002BUpscale, and Image-Edit.",
-  "version": 1,
-  "subVersion": 7,
+  "version": 2,
+  "subVersion": 0,
   "isReleaseConfig": true,
   "isLegacy": false,
   "workloadTarget": "Installer",
@@ -27,8 +27,8 @@
     "installSageAttention": true
   },
   "torch": {
-    "torchVersion": "2.8.0",
-    "cudaVersion": "12.8",
+    "torchVersion": "2.11.0",
+    "cudaVersion": "13.0",
     "indexUrl": ""
   },
   "paths": {
