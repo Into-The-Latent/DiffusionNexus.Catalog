@@ -3,7 +3,7 @@
   "name": "FlashVSR-Video\u0026Image Upscale",
   "description": "**FlashVSR** (OpenImagingLab) \u2014 a streaming, diffusion-based super-resolution model for near real-time video and image upscaling, wrapped for ComfyUI via the \u0022Ultra Fast\u0022 node pack.\n\n- One-step diffusion upscaling \u2014 far faster than traditional multi-step SR pipelines\n- Handles both video and still-image upscaling\n\nIncludes two workflows by AIKnowledge2Go: **Video-Upscale-FlashVSR Ultra** and **Image-Upscale-FlashVSR Ultra**.",
   "version": 2,
-  "subVersion": 0,
+  "subVersion": 1,
   "isReleaseConfig": true,
   "isLegacy": false,
   "workloadTarget": "Installer",

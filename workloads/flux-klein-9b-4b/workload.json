@@ -3,7 +3,7 @@
   "name": "Flux-Klein 9b \u002B 4b",
   "description": "**FLUX.2 [klein]** (Black Forest Labs) \u2014 BFL\u0027s fastest image model family, unifying text-to-image generation and multi-reference editing in one compact architecture.\n\n- End-to-end inference in **under a second**, step-distilled to 4 inference steps\n- 9B variant defines the quality/latency frontier; 4B variant trades a little quality for even more speed\n- Non-commercial license; GGUF quantized (via unsloth) for both sizes\n\nIncludes three workflows by AIKnowledge2Go: **Text-to-Image**, **Image-Edit**, and an **Anime-to-Real** conversion flow.",
   "version": 2,
-  "subVersion": 0,
+  "subVersion": 1,
   "isReleaseConfig": true,
   "isLegacy": false,
   "workloadTarget": "Installer",

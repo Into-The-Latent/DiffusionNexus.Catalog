@@ -3,7 +3,7 @@
   "name": "Krea-2-Turbo",
   "description": "**Krea 2 Turbo** \u2014 Krea AI\u0027s fast image generation and editing model, GGUF quantized with a dedicated Krea2Edit ComfyUI node.\n\n- Turbo-distilled for quick text-to-image and image-editing turnaround\n- \u0022Identity Edit\u0022 LoRA included for consistent-subject edits\n- Non-commercial license\n\nIncludes four workflows by **IntoTheLatent**: Text2Image\u002BUpscale, Upscale-only, Batch Text2Image\u002BUpscale, and Image-Edit.",
   "version": 2,
-  "subVersion": 0,
+  "subVersion": 1,
   "isReleaseConfig": true,
   "isLegacy": false,
   "workloadTarget": "Installer",

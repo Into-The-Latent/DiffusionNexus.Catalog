@@ -3,7 +3,7 @@
   "name": "LTX-2-3-V1.1-Director-GGUF",
   "description": "**LTX-2.3 V1.1** (Lightricks) \u2014 22B text/image-to-video model with synchronized audio, GGUF quantized, plus the new **Director** workflow for explicit camera/shot control.\n\n- Same generation quality as the base LTX-2.3 pack, updated to the V1.1 checkpoint\n- Director workflow adds cinematography-style controls (camera moves, shot composition) on top of standard generation\n\nIncludes five workflows by AIKnowledge2Go: Text2Video, Image2Video, Text\u002BAudio2Video, Image\u002BAudio2Video, and Director V2 (with the older Director flow kept for compatibility).",
   "version": 2,
-  "subVersion": 0,
+  "subVersion": 1,
   "isReleaseConfig": true,
   "isLegacy": false,
   "workloadTarget": "Installer",

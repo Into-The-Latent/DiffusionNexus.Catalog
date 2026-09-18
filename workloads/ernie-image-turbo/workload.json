@@ -1,9 +1,9 @@
 {
   "id": "08a686b2-42c4-4aeb-bd59-0321455d06e1",
   "name": "Ernie-Image-Turbo",
-  "description": "**Baidu ERNIE-Image-Turbo** \u2014 an 8-step distilled text-to-image DiT model (Apache-2.0), optimized with DMD \u002B RL for speed and aesthetics.\n\n- Strong dense/long-form **text rendering** \u2014 posters, comics, infographics, multi-panel layouts\n- Reliable complex instruction-following for multi-object, detail-heavy prompts\n- Runs on consumer GPUs with **24GB VRAM**\n- GGUF quantized (via unsloth) for ComfyUI, with a bundled prompt-enhancer text encoder\n\nIncludes a text-to-image workflow and an upscale workflow (rgthree, UltimateSDUpscale, KJNodes, Easy-Use), both by AIKnowledge2Go.",
+  "description": "**Baidu ERNIE-Image-Turbo** \u2014 an 8-step distilled text-to-image DiT model (Apache-2.0), optimized with DMD \u002B RL for speed and aesthetics.\n\n- Strong dense/long-form **text rendering** \u2014 posters, comics, infographics, multi-panel layouts\n- Reliable complex instruction-following for multi-object, detail-heavy prompts\n- GGUF quantized (via unsloth) for ComfyUI, with a bundled prompt-enhancer text encoder\n\nIncludes a text-to-image workflow and an upscale workflow (rgthree, UltimateSDUpscale, KJNodes, Easy-Use), both by AIKnowledge2Go.",
   "version": 2,
-  "subVersion": 0,
+  "subVersion": 2,
   "isReleaseConfig": true,
   "isLegacy": false,
   "workloadTarget": "Installer",
