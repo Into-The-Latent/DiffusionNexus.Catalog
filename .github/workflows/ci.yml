@@ -49,11 +49,21 @@ jobs:
         run: |
           dotnet nuget add source https://nuget.pkg.github.com/Little-God1983/index.json --name github-littlegod --username Little-God1983 --password "$PACKAGES_READ_TOKEN" --store-password-in-clear-text
           dotnet tool install -g DiffusionNexus.Installer.SDK.Catalog.Tool --prerelease
-      - name: Pack preview (next stable number)
+      - name: Pack preview
         run: |
+          # Preview is numbered by CONTENT, not by "last tag + 1". When none of the shipped catalog
+          # files differ from the latest stable release, the preview IS that release and carries
+          # its number; only real catalog changes make it stable + 1. Without this, a push that
+          # brings the commit and its v<N> tag together was packed as an empty "v<N+1> preview".
           LAST=$(git tag -l 'v*' | sed 's/^v//' | sort -n | tail -1)
-          NEXT=$(( ${LAST:-0} + 1 ))
-          dn-catalog pack . --out ../dist --version "$NEXT" --channel preview --commit "$GITHUB_SHA"
+          if [ -n "$LAST" ] && git diff --quiet "v$LAST" HEAD -- catalog.json repositories.json wheels.json workloads workflows; then
+            VERSION=$LAST
+            echo "No catalog changes since v$LAST - preview stays at v$LAST"
+          else
+            VERSION=$(( ${LAST:-0} + 1 ))
+            echo "Catalog changed since v${LAST:-0} - preview is v$VERSION"
+          fi
+          dn-catalog pack . --out ../dist --version "$VERSION" --channel preview --commit "$GITHUB_SHA"
       - name: Re-point the preview pre-release
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
