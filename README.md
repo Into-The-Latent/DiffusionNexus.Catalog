@@ -33,7 +33,7 @@ Bump `version`/`subVersion` of the item you changed — CI warns when content ch
 ## Versions and channels
 
 - `releases/latest` = stable. Draft releases are invisible; deleting a release rolls back.
-- Pre-release `preview` tracks `main` and is rebuilt on every push.
+- Pre-release `preview` tracks `main` and is rebuilt on every push. It is numbered by content: same number as the latest stable release while nothing has changed, stable + 1 as soon as `main` carries a catalog change.
 
 ## Validate locally
 
