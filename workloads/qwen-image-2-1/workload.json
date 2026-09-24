@@ -1,9 +1,9 @@
 {
   "id": "c56c7ff7-3ca0-4420-bc72-a1ac6f537824",
   "name": "Qwen-Image-2.1",
-  "description": "**Qwen-Image 2.1** — Alibaba's latest Qwen-Image text-to-image model, in Comfy-Org's native ComfyUI checkpoints.\n\n- 8 GB profile: int8 ConvRot diffusion model and Qwen3-VL 8B text encoder (~7 GB + ~9 GB)\n- 24 GB profile: full bf16 diffusion model and text encoder (~14 GB + ~17 GB)\n- Qwen-Image 2.1 bf16 VAE on both profiles\n\nWorkflows follow.",
+  "description": "**Qwen-Image 2.1** — Alibaba's latest Qwen-Image text-to-image model\n\n- 8 GB profile: int8 ConvRot diffusion model and Qwen3-VL 8B text encoder (~7 GB + ~9 GB)\n- 24 GB profile: full bf16 diffusion model and text encoder (~14 GB + ~17 GB)\n- Qwen-Image 2.1 bf16 VAE on both profiles\n\nIncludes the **Qwen2.1-Image-Edit** workflow by **IntoTheLatent**.",
   "version": 1,
-  "subVersion": 0,
+  "subVersion": 1,
   "isReleaseConfig": true,
   "isLegacy": false,
   "workloadTarget": "Installer",
@@ -53,12 +53,10 @@
   "installLamaCpp": false,
   "selectedLamaCppWheelId": null,
   "gitRepositories": [
-    "4ce7b7f6-9374-4aab-a00e-fec2448c28df",
-    "b3e6754c-a5cc-42a9-8943-cd5fe7581b2f",
-    "eb1bd9c2-208a-4e01-a46a-4740ebae9ab5",
     "bb68fb22-52c1-428f-93a3-106e44d8fcf8",
     "22c44679-20c2-4320-bfe7-dc1c9cd66f31",
-    "4b770405-17dc-48a8-8572-86edb36cbe41"
+    "4b770405-17dc-48a8-8572-86edb36cbe41",
+    "da9fb948-c137-458e-8aac-96f7fe18e200"
   ],
   "modelDownloads": [
     {
