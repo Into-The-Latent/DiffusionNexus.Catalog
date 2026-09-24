@@ -1,0 +1,133 @@
+{
+  "id": "c56c7ff7-3ca0-4420-bc72-a1ac6f537824",
+  "name": "Qwen-Image-2.1",
+  "description": "**Qwen-Image 2.1** — Alibaba's latest Qwen-Image text-to-image model, in Comfy-Org's native ComfyUI checkpoints.\n\n- 8 GB profile: int8 ConvRot diffusion model and Qwen3-VL 8B text encoder (~7 GB + ~9 GB)\n- 24 GB profile: full bf16 diffusion model and text encoder (~14 GB + ~17 GB)\n- Qwen-Image 2.1 bf16 VAE on both profiles\n\nWorkflows follow.",
+  "version": 1,
+  "subVersion": 0,
+  "isReleaseConfig": true,
+  "isLegacy": false,
+  "workloadTarget": "Installer",
+  "workflowType": "Image",
+  "thumbnail": "thumbnail.webp",
+  "repository": {
+    "type": "ComfyUI",
+    "repositoryUrl": "https://github.com/comfyanonymous/ComfyUI",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": true,
+    "virtualEnvironmentName": "venv",
+    "installTriton": true,
+    "installSageAttention": true
+  },
+  "torch": {
+    "torchVersion": "2.11.0",
+    "cudaVersion": "13.0",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": "8,24"
+  },
+  "installLamaCpp": false,
+  "selectedLamaCppWheelId": null,
+  "gitRepositories": [
+    "4ce7b7f6-9374-4aab-a00e-fec2448c28df",
+    "b3e6754c-a5cc-42a9-8943-cd5fe7581b2f",
+    "eb1bd9c2-208a-4e01-a46a-4740ebae9ab5",
+    "bb68fb22-52c1-428f-93a3-106e44d8fcf8",
+    "22c44679-20c2-4320-bfe7-dc1c9cd66f31",
+    "4b770405-17dc-48a8-8572-86edb36cbe41"
+  ],
+  "modelDownloads": [
+    {
+      "id": "c6d9699c-ee1e-4797-8c8f-6bdd3834aabd",
+      "name": "qwen_image_2.1",
+      "downloadLinks": [
+        {
+          "id": "8bf846c1-c47d-4fda-871f-053f9398a353",
+          "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/main/diffusion_models/qwen_image_2.1_int8_convrot.safetensors",
+          "vramProfile": "VRAM_8GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "9811a60d-1b78-40a2-95eb-6c166e66dd2b",
+          "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/main/diffusion_models/qwen_image_2.1_bf16.safetensors",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_8GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "c05c7066-c89f-44ac-8e7c-b419770ba198",
+      "name": "qwen3vl_8b",
+      "downloadLinks": [
+        {
+          "id": "ed99b54e-d3c0-44fb-9cc5-24def24899b8",
+          "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/main/text_encoders/qwen3vl_8b_int8_convrot.safetensors",
+          "vramProfile": "VRAM_8GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "f734ff0e-8881-4b18-984a-e7c580e1aa93",
+          "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/main/text_encoders/qwen3vl_8b_bf16.safetensors",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/text_encoders",
+      "vramProfile": "VRAM_8GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "5d29765c-f796-472d-a452-ec545a6ffbc4",
+      "name": "qwen_image_2.1_vae_bf16",
+      "downloadLinks": [
+        {
+          "id": "67762e78-591e-469d-8ccd-cb605c09236c",
+          "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/main/vae/qwen_image_2.1_vae_bf16.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/vae",
+      "vramProfile": "VRAM_8GB",
+      "enabled": true,
+      "isPlaceholder": false
+    }
+  ]
+}
