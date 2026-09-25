@@ -1,0 +1,9 @@
+{
+  "id": "858c0909-c1b9-4a27-8268-e9e32392f1aa",
+  "name": "Qwen2-1- 2. Image-edit by IntoTheLatent",
+  "version": 1,
+  "subVersion": 1,
+  "workloads": [
+    "c56c7ff7-3ca0-4420-bc72-a1ac6f537824"
+  ]
+}

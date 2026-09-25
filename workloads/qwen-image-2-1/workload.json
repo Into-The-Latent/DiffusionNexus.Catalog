@@ -1,9 +1,9 @@
 {
   "id": "c56c7ff7-3ca0-4420-bc72-a1ac6f537824",
   "name": "Qwen-Image-2.1",
-  "description": "**Qwen-Image 2.1** — Alibaba's latest Qwen-Image text-to-image model\n\n- 8 GB profile: int8 ConvRot diffusion model and Qwen3-VL 8B text encoder (~7 GB + ~9 GB)\n- 24 GB profile: full bf16 diffusion model and text encoder (~14 GB + ~17 GB)\n- Qwen-Image 2.1 bf16 VAE on both profiles\n\nIncludes the **Qwen2.1-Image-Edit** workflow by **IntoTheLatent**.",
+  "description": "**Qwen-Image 2.1** \u2014 Alibaba\u0027s latest Qwen-Image text-to-image model\n\n- 8 GB profile: int8 ConvRot diffusion model and Qwen3-VL 8B text encoder (~7 GB \u002B ~9 GB)\n- 24 GB profile: full bf16 diffusion model and text encoder (~14 GB \u002B ~17 GB)\n- Qwen-Image 2.1 bf16 VAE on both profiles\n\nIncludes the **Qwen2.1-Image-Edit** workflow by **IntoTheLatent**.",
   "version": 1,
-  "subVersion": 1,
+  "subVersion": 2,
   "isReleaseConfig": true,
   "isLegacy": false,
   "workloadTarget": "Installer",
@@ -56,7 +56,8 @@
     "bb68fb22-52c1-428f-93a3-106e44d8fcf8",
     "22c44679-20c2-4320-bfe7-dc1c9cd66f31",
     "4b770405-17dc-48a8-8572-86edb36cbe41",
-    "da9fb948-c137-458e-8aac-96f7fe18e200"
+    "da9fb948-c137-458e-8aac-96f7fe18e200",
+    "bba5b05e-12e5-41b5-bb01-19ef4ec24bac"
   ],
   "modelDownloads": [
     {

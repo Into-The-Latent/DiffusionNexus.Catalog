@@ -184,6 +184,14 @@
     "additionalPipPackages": null
   },
   {
+    "id": "bba5b05e-12e5-41b5-bb01-19ef4ec24bac",
+    "url": "https://github.com/Fannovel16/comfyui_controlnet_aux",
+    "name": "comfyui_controlnet_aux",
+    "priority": 4,
+    "installRequirements": true,
+    "additionalPipPackages": null
+  },
+  {
     "id": "d384f472-f37c-4a34-ad6e-b7663aee593f",
     "url": "https://github.com/kijai/ComfyUI-MelBandRoFormer",
     "name": "ComfyUI-MelBandRoFormer",
