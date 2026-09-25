@@ -53,11 +53,11 @@
   "installLamaCpp": false,
   "selectedLamaCppWheelId": null,
   "gitRepositories": [
+    "da9fb948-c137-458e-8aac-96f7fe18e200",
+    "bba5b05e-12e5-41b5-bb01-19ef4ec24bac",
     "bb68fb22-52c1-428f-93a3-106e44d8fcf8",
     "22c44679-20c2-4320-bfe7-dc1c9cd66f31",
-    "4b770405-17dc-48a8-8572-86edb36cbe41",
-    "da9fb948-c137-458e-8aac-96f7fe18e200",
-    "bba5b05e-12e5-41b5-bb01-19ef4ec24bac"
+    "4b770405-17dc-48a8-8572-86edb36cbe41"
   ],
   "modelDownloads": [
     {
