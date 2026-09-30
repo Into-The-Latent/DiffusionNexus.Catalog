@@ -32,7 +32,11 @@ Bump `version`/`subVersion` of the item you changed — CI warns when content ch
 
 ## Versions and channels
 
-- `releases/latest` = stable. Draft releases are invisible; deleting a release rolls back.
+- `releases/latest` = stable. Draft releases are invisible. To roll back, tag a new release that
+  carries the old content (`git revert`, then `gh release create v<N+1>`). Deleting the newest
+  release only makes `releases/latest` serve an older publication, and installed apps ignore a
+  manifest packed before the one they applied on the same channel (SDK 2.1.0): they would keep
+  the deleted content.
 - Pre-release `preview` tracks `main` and is rebuilt on every push. It is numbered by content: same number as the latest stable release while nothing has changed, stable + 1 as soon as `main` carries a catalog change.
 
 ## Validate locally
