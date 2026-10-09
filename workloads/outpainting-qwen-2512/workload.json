@@ -1,9 +1,9 @@
 {
   "id": "137929e4-5c05-4304-80d4-5d785d45fd3f",
   "name": "Outpainting-Qwen 2512",
-  "description": "**Qwen-Image-2512 \u002B InstantX ControlNet**, running as a Diffusion Nexus Core capability, configured for outpainting (extending an image beyond its original borders) rather than masked inpainting.\n\nAlso pulls in the Qwen3-VL-Instruct node for prompt/caption assistance while outpainting. Includes the \u0060Inpaint-Qwen-2512\u0060 workflow (shared with the Inpainting pack).",
+  "description": "**Qwen-Image-2512 + InstantX ControlNet**, running as a Diffusion Nexus Core capability, configured for outpainting (extending an image beyond its original borders) rather than masked inpainting.\n\nVision: the Simple Qwen3-VL GGUF node (llama.cpp) describes the surroundings with Qwen3-VL 8B Abliterated-Caption-it and writes the outpaint prompt; ShowText puts the description in the job's outputs. Includes the `Inpaint-Qwen-2512` workflow (shared with the Inpainting pack).",
   "version": 1,
-  "subVersion": 21,
+  "subVersion": 22,
   "isReleaseConfig": true,
   "isLegacy": false,
   "workloadTarget": "DiffusionNexusCore",
@@ -50,13 +50,12 @@
   "vram": {
     "vramProfiles": "8,12,16,24,32"
   },
-  "installLamaCpp": false,
-  "selectedLamaCppWheelId": null,
+  "installLamaCpp": true,
+  "selectedLamaCppWheelId": "f119f4d4-ef71-484f-8213-0abc49f26900",
   "gitRepositories": [
     "4fb94538-ab8b-4e63-96d9-1b967d775fc0",
-    "3c84d425-200e-450c-ad4c-13c0922ffc34",
-    "b6fd8a6e-ccbb-4a5c-a9df-912d0407e4aa",
-    "b3e6754c-a5cc-42a9-8943-cd5fe7581b2f"
+    "26d661b8-8cf9-4c48-9b28-09dd6854d6d6",
+    "b6fd8a6e-ccbb-4a5c-a9df-912d0407e4aa"
   ],
   "modelDownloads": [
     {
@@ -96,14 +95,82 @@
       "isPlaceholder": false
     },
     {
-      "id": "62685407-3423-4224-9b6d-9a473b2ac7bd",
-      "name": "Qwen 3 VL",
-      "downloadLinks": [],
+      "id": "6ea48b8c-9332-4067-9bbc-affceda51977",
+      "name": "Qwen3-VL-8B-Abliterated-Caption-it",
+      "downloadLinks": [
+        {
+          "id": "98e6f972-a257-4ee0-affe-81b4b456ce67",
+          "url": "https://huggingface.co/mradermacher/Qwen3-VL-8B-Abliterated-Caption-it-GGUF/resolve/main/Qwen3-VL-8B-Abliterated-Caption-it.Q4_K_M.gguf",
+          "vramProfile": "VRAM_8GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "a7144ed6-f5fd-4038-acbb-8704cc7bdcf6",
+          "url": "https://huggingface.co/mradermacher/Qwen3-VL-8B-Abliterated-Caption-it-GGUF/resolve/main/Qwen3-VL-8B-Abliterated-Caption-it.Q5_K_M.gguf",
+          "vramProfile": "VRAM_12GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "b8bd6986-13ac-4436-9872-88e118042836",
+          "url": "https://huggingface.co/mradermacher/Qwen3-VL-8B-Abliterated-Caption-it-GGUF/resolve/main/Qwen3-VL-8B-Abliterated-Caption-it.Q6_K.gguf",
+          "vramProfile": "VRAM_16GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "09c5696e-039c-4153-9d09-1f232e1a2df1",
+          "url": "https://huggingface.co/mradermacher/Qwen3-VL-8B-Abliterated-Caption-it-GGUF/resolve/main/Qwen3-VL-8B-Abliterated-Caption-it.Q8_0.gguf",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "15c39924-ab1f-43cf-b321-fb81043b0a77",
+          "url": "https://huggingface.co/mradermacher/Qwen3-VL-8B-Abliterated-Caption-it-GGUF/resolve/main/Qwen3-VL-8B-Abliterated-Caption-it.Q8_0.gguf",
+          "vramProfile": "VRAM_32GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
       "url": "",
-      "destination": "",
-      "vramProfile": "VRAM_16GB",
+      "destination": "models/LLM",
+      "vramProfile": "VRAM_8GB",
       "enabled": true,
-      "isPlaceholder": true
+      "isPlaceholder": false
+    },
+    {
+      "id": "0e2eb590-b6b5-46a0-a019-05f988cfeeb0",
+      "name": "Qwen3-VL-8B-Abliterated-Caption-it mmproj",
+      "downloadLinks": [
+        {
+          "id": "0ca45279-582c-4cdf-9d92-b0acdd0680c0",
+          "url": "https://huggingface.co/mradermacher/Qwen3-VL-8B-Abliterated-Caption-it-GGUF/resolve/main/Qwen3-VL-8B-Abliterated-Caption-it.mmproj-Q8_0.gguf",
+          "vramProfile": "VRAM_8GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "496998d3-5b50-496c-a506-33e559c0a74e",
+          "url": "https://huggingface.co/mradermacher/Qwen3-VL-8B-Abliterated-Caption-it-GGUF/resolve/main/Qwen3-VL-8B-Abliterated-Caption-it.mmproj-f16.gguf",
+          "vramProfile": "VRAM_12GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "1b328cca-5ba9-444b-86eb-12511459bb32",
+          "url": "https://huggingface.co/mradermacher/Qwen3-VL-8B-Abliterated-Caption-it-GGUF/resolve/main/Qwen3-VL-8B-Abliterated-Caption-it.mmproj-f16.gguf",
+          "vramProfile": "VRAM_16GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/LLM",
+      "vramProfile": "VRAM_8GB",
+      "enabled": true,
+      "isPlaceholder": false
     },
     {
       "id": "72601983-13d2-4648-921e-937f1504e0c8",

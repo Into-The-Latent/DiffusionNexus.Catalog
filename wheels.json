@@ -7,5 +7,14 @@
     "cudaVersion": "12.8",
     "url": "https://github.com/JamePeng/llama-cpp-python/releases/download/v0.3.20-cu128-Basic-win-20260104/llama_cpp_python-0.3.20-cp312-cp312-win_amd64.whl",
     "sha256": "sha256:949aca17374a6f908707f4b00301ef9e085f00a73b4743b1c0c9bd064a025c8a"
+  },
+  {
+    "id": "4e3cd08d-94e0-4a96-8f33-a72d34a3594b",
+    "name": "JamePeng cu130",
+    "isGPU": true,
+    "pythonVersion": "3.12",
+    "cudaVersion": "13.0",
+    "url": "https://github.com/JamePeng/llama-cpp-python/releases/download/v0.4.2-cu130-win-20261003/llama_cpp_python-0.4.2+cu130-cp312-cp312-win_amd64.whl",
+    "sha256": "sha256:693cef0b23b042e66e4f35c32ab2eb27bdbfa1c06371df7f95ab350f185a90c2"
   }
 ]

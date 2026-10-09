@@ -238,5 +238,13 @@
     "priority": 4,
     "installRequirements": true,
     "additionalPipPackages": null
+  },
+  {
+    "id": "26d661b8-8cf9-4c48-9b28-09dd6854d6d6",
+    "url": "https://github.com/KLL535/ComfyUI_Simple_Qwen3-VL-gguf",
+    "name": "ComfyUI_Simple_Qwen3-VL-gguf",
+    "priority": 2,
+    "installRequirements": true,
+    "additionalPipPackages": null
   }
 ]
