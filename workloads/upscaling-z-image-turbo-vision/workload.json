@@ -1,0 +1,212 @@
+{
+  "id": "fe2e7606-ac36-470e-a7c5-7f8cc23ecc98",
+  "name": "Upscaling-Z-Image-Turbo Vision",
+  "description": "**Z-Image-Turbo** with UltimateSDUpscale, plus Vision Auto-Prompt: the Simple Qwen3-VL GGUF node (llama.cpp) describes each image with Qwen3-VL 8B Abliterated, and the description becomes that image's upscale prompt. Runs as a Diffusion Nexus Core capability.",
+  "version": 1,
+  "subVersion": 0,
+  "isReleaseConfig": true,
+  "isLegacy": false,
+  "workloadTarget": "DiffusionNexusCore",
+  "workflowType": "Image",
+  "thumbnail": "thumbnail.webp",
+  "repository": {
+    "type": "ComfyUI",
+    "repositoryUrl": "https://github.com/comfyanonymous/ComfyUI",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": false,
+    "virtualEnvironmentName": "venv",
+    "installTriton": true,
+    "installSageAttention": true
+  },
+  "torch": {
+    "torchVersion": "2.8.0",
+    "cudaVersion": "12.8",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": "8,12,16,24,32"
+  },
+  "installLamaCpp": true,
+  "selectedLamaCppWheelId": "f119f4d4-ef71-484f-8213-0abc49f26900",
+  "gitRepositories": [
+    "40ee7409-7c27-48fc-8192-a9ef5e9d9fbb",
+    "26d661b8-8cf9-4c48-9b28-09dd6854d6d6",
+    "b6fd8a6e-ccbb-4a5c-a9df-912d0407e4aa"
+  ],
+  "modelDownloads": [
+    {
+      "id": "89542274-5881-49b1-99a3-f096d88161b6",
+      "name": "4x-UltraSharp.pth",
+      "downloadLinks": [
+        {
+          "id": "b14bb866-66a7-437a-bc42-f05a81107174",
+          "url": "https://huggingface.co/Kim2091/UltraSharp/resolve/main/4x-UltraSharp.pth?download=true",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/upscale_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "d69d5f12-f90b-46a5-ba25-bc63a35bdc45",
+      "name": "z_image_turbo_bf16.safetensors",
+      "downloadLinks": [
+        {
+          "id": "c248b4d2-940e-48b6-b144-26a780e570b2",
+          "url": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors?download=true",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "a9bf75bf-3f2a-4fd3-8e38-1e85080944f0",
+      "name": "ae.safetensors",
+      "downloadLinks": [
+        {
+          "id": "87bd258f-bff3-49d8-9475-fb064f235c8b",
+          "url": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/vae/ae.safetensors?download=true",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/vae",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "69f9580d-e3c4-48d3-86a3-0daa97555cab",
+      "name": "qwen_3_4b.safetensors",
+      "downloadLinks": [
+        {
+          "id": "2d9da519-05f9-4151-b6b5-cb4190b61b51",
+          "url": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors?download=true",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/text_encoders",
+      "vramProfile": "VRAM_16GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "27b0e980-37dd-49f0-9869-a2b31291c138",
+      "name": "Qwen3-VL-8B-Abliterated-Caption-it",
+      "downloadLinks": [
+        {
+          "id": "194a1852-0ea7-4141-a9b3-e2dc09021578",
+          "url": "https://huggingface.co/mradermacher/Qwen3-VL-8B-Abliterated-Caption-it-GGUF/resolve/main/Qwen3-VL-8B-Abliterated-Caption-it.Q4_K_M.gguf",
+          "vramProfile": "VRAM_8GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "e8015ebf-ca33-4b4e-8749-42c97c966e20",
+          "url": "https://huggingface.co/mradermacher/Qwen3-VL-8B-Abliterated-Caption-it-GGUF/resolve/main/Qwen3-VL-8B-Abliterated-Caption-it.Q5_K_M.gguf",
+          "vramProfile": "VRAM_12GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "bfc22889-a481-44db-9569-ab456d7c729f",
+          "url": "https://huggingface.co/mradermacher/Qwen3-VL-8B-Abliterated-Caption-it-GGUF/resolve/main/Qwen3-VL-8B-Abliterated-Caption-it.Q6_K.gguf",
+          "vramProfile": "VRAM_16GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "9e1e260e-a65e-4b1c-a37f-614fd5dc2e7b",
+          "url": "https://huggingface.co/mradermacher/Qwen3-VL-8B-Abliterated-Caption-it-GGUF/resolve/main/Qwen3-VL-8B-Abliterated-Caption-it.Q8_0.gguf",
+          "vramProfile": "VRAM_24GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "68cc3c46-9009-49b6-bccb-9e4be4fa210d",
+          "url": "https://huggingface.co/mradermacher/Qwen3-VL-8B-Abliterated-Caption-it-GGUF/resolve/main/Qwen3-VL-8B-Abliterated-Caption-it.Q8_0.gguf",
+          "vramProfile": "VRAM_32GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/LLM",
+      "vramProfile": "VRAM_8GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "1dbba8e4-1bdf-43ab-9092-c54e647a9802",
+      "name": "Qwen3-VL-8B-Abliterated-Caption-it mmproj",
+      "downloadLinks": [
+        {
+          "id": "6275e7a0-1706-4524-aecc-b69551338cff",
+          "url": "https://huggingface.co/mradermacher/Qwen3-VL-8B-Abliterated-Caption-it-GGUF/resolve/main/Qwen3-VL-8B-Abliterated-Caption-it.mmproj-Q8_0.gguf",
+          "vramProfile": "VRAM_8GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "ffb2803d-6434-4c00-8916-c726a6a4c4ff",
+          "url": "https://huggingface.co/mradermacher/Qwen3-VL-8B-Abliterated-Caption-it-GGUF/resolve/main/Qwen3-VL-8B-Abliterated-Caption-it.mmproj-f16.gguf",
+          "vramProfile": "VRAM_12GB",
+          "destination": "",
+          "enabled": true
+        },
+        {
+          "id": "a3b0fa1a-57a9-4bef-b190-e280b2021773",
+          "url": "https://huggingface.co/mradermacher/Qwen3-VL-8B-Abliterated-Caption-it-GGUF/resolve/main/Qwen3-VL-8B-Abliterated-Caption-it.mmproj-f16.gguf",
+          "vramProfile": "VRAM_16GB",
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/LLM",
+      "vramProfile": "VRAM_8GB",
+      "enabled": true,
+      "isPlaceholder": false
+    }
+  ]
+}

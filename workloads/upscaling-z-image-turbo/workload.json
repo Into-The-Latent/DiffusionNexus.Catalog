@@ -1,9 +1,9 @@
 {
   "id": "b853eb7c-0a0e-48a6-985e-e32b2f8848f5",
   "name": "Upscaling-Z-Image-Turbo",
-  "description": "**Z-Image-Turbo** (Tongyi-MAI / Alibaba) \u2014 an efficient single-stream DiT text-to-image foundation model (Apache-2.0), paired here with UltimateSDUpscale for a fast generate-then-upscale pipeline. Runs as a Diffusion Nexus Core capability.\n\nIncludes the \u0060Z-Image-Turbo-Upscale\u0060 workflow.",
+  "description": "**Z-Image-Turbo** (Tongyi-MAI / Alibaba) — an efficient single-stream DiT text-to-image foundation model (Apache-2.0), paired here with UltimateSDUpscale for a fast generate-then-upscale pipeline. Runs as a Diffusion Nexus Core capability.\n\nIncludes the `Z-Image-Turbo-Upscale` workflow. Vision Auto-Prompt lives in *Upscaling-Z-Image-Turbo Vision*.",
   "version": 1,
-  "subVersion": 6,
+  "subVersion": 7,
   "isReleaseConfig": true,
   "isLegacy": false,
   "workloadTarget": "DiffusionNexusCore",
@@ -53,9 +53,7 @@
   "installLamaCpp": false,
   "selectedLamaCppWheelId": null,
   "gitRepositories": [
-    "3c84d425-200e-450c-ad4c-13c0922ffc34",
-    "40ee7409-7c27-48fc-8192-a9ef5e9d9fbb",
-    "22c44679-20c2-4320-bfe7-dc1c9cd66f31"
+    "40ee7409-7c27-48fc-8192-a9ef5e9d9fbb"
   ],
   "modelDownloads": [
     {
