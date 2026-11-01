@@ -1,0 +1,9 @@
+{
+  "id": "9b07811b-804b-4d9c-99d0-a74126970123",
+  "name": "3.Moss-Text2Image-Batch-Prompt by IntoTheLatent",
+  "version": 1,
+  "subVersion": 0,
+  "workloads": [
+    "1d06c317-1555-4071-95a1-e13a317d96f3"
+  ]
+}

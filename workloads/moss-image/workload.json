@@ -1,0 +1,118 @@
+{
+  "id": "1d06c317-1555-4071-95a1-e13a317d96f3",
+  "name": "MOSS-Image",
+  "description": "**MOSS-Image** — the fully open text-to-image model (Apache 2.0, commercial use allowed) that lets you *place* things instead of just describing them.\n\n- **Layout control**: draw bounding boxes and say what goes in each one — characters, products and text land exactly where you put them\n- **Typography that reads**: posters, memes, signs and labels with the words spelled right\n- **Prompt weighting** `(phrase:1.3)`: crank an idea up, or weight it negative to erase it from the image\n- **Runs on 12 GB**: the INT8 ConvRot build on every tier — blind-tested against the full BF16 model, same look, about 25% faster\n- Needs ComfyUI 0.42 or newer (installed fresh from master)\n\nIncludes three workflows by **IntoTheLatent**: **Text2Image Simple**, **Bounding Boxes** (layout prompt builder + style wizard) and **Batch Prompt**.",
+  "version": 1,
+  "subVersion": 0,
+  "isReleaseConfig": true,
+  "isLegacy": false,
+  "workloadTarget": "Installer",
+  "workflowType": "Image",
+  "thumbnail": "thumbnail.webp",
+  "repository": {
+    "type": "ComfyUI",
+    "repositoryUrl": "https://github.com/comfyanonymous/ComfyUI",
+    "branch": "",
+    "commitHash": ""
+  },
+  "python": {
+    "pythonVersion": "3.12",
+    "interpreterPathOverride": "",
+    "pythonSource": "Auto",
+    "minimumPatchVersion": "",
+    "createVirtualEnvironment": true,
+    "createVramSettings": false,
+    "virtualEnvironmentName": "venv",
+    "installTriton": true,
+    "installSageAttention": true
+  },
+  "torch": {
+    "torchVersion": "2.11.0",
+    "cudaVersion": "13.0",
+    "indexUrl": ""
+  },
+  "paths": {
+    "rootDirectory": "",
+    "defaultModelDownloadDirectory": "",
+    "logFileName": "install.log",
+    "defaultDiffusionModelFolder": "",
+    "defaultLoraFolder": "",
+    "defaultVAEFolder": "",
+    "defaultCheckpointFolder": "",
+    "defaultEmbeddingFolder": "",
+    "defaultUpscalerFolder": "",
+    "defaultControlNetFolder": "",
+    "defaultTextEncoderFolder": "",
+    "defaultClipFolder": "",
+    "defaultClipVisionFolder": "",
+    "coreModelsDirectory": ""
+  },
+  "vram": {
+    "vramProfiles": "12,16,24,32"
+  },
+  "installLamaCpp": false,
+  "selectedLamaCppWheelId": null,
+  "gitRepositories": [
+    "da9fb948-c137-458e-8aac-96f7fe18e200",
+    "b3e6754c-a5cc-42a9-8943-cd5fe7581b2f",
+    "22c44679-20c2-4320-bfe7-dc1c9cd66f31",
+    "4b770405-17dc-48a8-8572-86edb36cbe41",
+    "bb68fb22-52c1-428f-93a3-106e44d8fcf8"
+  ],
+  "modelDownloads": [
+    {
+      "id": "a99dfc6f-3084-4f72-9cc8-3e43f3ff0ccc",
+      "name": "MOSS-Image SFT transformer (INT8 ConvRot)",
+      "downloadLinks": [
+        {
+          "id": "92450f2f-9192-4d4d-9705-c0aa1e84b74b",
+          "url": "https://huggingface.co/Comfy-Org/MOSS-Image/resolve/main/diffusion_models/moss_image_sft_int8_convrot.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/diffusion_models",
+      "vramProfile": "VRAM_12GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "2d32d60e-9bfc-45de-b8d0-38e500b1bb34",
+      "name": "qwen3.5_9b_w4a8_gptq (text encoder)",
+      "downloadLinks": [
+        {
+          "id": "89d75ca1-8895-43e5-b097-d7bc34b5c27c",
+          "url": "https://huggingface.co/Comfy-Org/MOSS-Image/resolve/main/text_encoders/qwen3.5_9b_w4a8_gptq.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/text_encoders",
+      "vramProfile": "VRAM_12GB",
+      "enabled": true,
+      "isPlaceholder": false
+    },
+    {
+      "id": "bcd6b4b7-c656-4fa5-958a-41a8afdba854",
+      "name": "flux2-vae",
+      "downloadLinks": [
+        {
+          "id": "1d981953-df53-4301-9f1b-9f6d3690f25e",
+          "url": "https://huggingface.co/Comfy-Org/MOSS-Image/resolve/main/vae/flux2-vae.safetensors",
+          "vramProfile": null,
+          "destination": "",
+          "enabled": true
+        }
+      ],
+      "url": "",
+      "destination": "models/vae",
+      "vramProfile": "VRAM_12GB",
+      "enabled": true,
+      "isPlaceholder": false
+    }
+  ]
+}

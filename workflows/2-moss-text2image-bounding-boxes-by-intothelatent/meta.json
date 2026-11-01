@@ -1,0 +1,9 @@
+{
+  "id": "76b8b734-2991-4d70-a89a-8d70dff93320",
+  "name": "2.Moss-Text2Image-BoundingBoxes by IntoTheLatent",
+  "version": 1,
+  "subVersion": 0,
+  "workloads": [
+    "1d06c317-1555-4071-95a1-e13a317d96f3"
+  ]
+}
