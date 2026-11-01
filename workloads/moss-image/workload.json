@@ -102,7 +102,7 @@
       "downloadLinks": [
         {
           "id": "1d981953-df53-4301-9f1b-9f6d3690f25e",
-          "url": "https://huggingface.co/Comfy-Org/MOSS-Image/resolve/main/vae/flux2-vae.safetensors",
+          "url": "https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors",
           "vramProfile": null,
           "destination": "",
           "enabled": true
